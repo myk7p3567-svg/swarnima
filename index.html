@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Swarnima’s AI Playbook</title>
+<meta name="description" content="A personal, ADHD-friendly AI productivity and automation playbook for a Meta Ads digital marketer: tools, 15 automations, a 30-day programme, prompts and a tracker.">
+<meta property="og:title" content="Swarnima’s AI Playbook">
+<meta property="og:description" content="Meta Ads, minus the busywork. Tools, 15 automations, a 30-day programme, prompts and a tracker.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8F%81%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+
+  --bg: #F3F4F9;
+  --surface: #FFFFFF;
+  --surface-2: #F8F8FC;
+  --ink: #1B1E3C;
+  --ink-2: #4E5270;
+  --ink-3: #7C809C;
+  --line: #DCDEEC;
+  --line-2: #ECEDF5;
+
+  --marigold: #F2A623;
+  --marigold-ink: #6E4600;
+  --marigold-soft: #FFF2D8;
+  --indigo: #2E2F7A;
+  --indigo-soft: #E9E8FF;
+  --mint: #189C74;
+  --mint-ink: #0D5C45;
+  --mint-soft: #DCF4EA;
+  --coral: #E2583F;
+  --coral-ink: #8A2E1B;
+  --coral-soft: #FFE3DD;
+  --sky: #2A77C9;
+  --sky-ink: #164A82;
+  --sky-soft: #DDEBFF;
+  --lilac: #7C52CF;
+  --lilac-ink: #4A2C87;
+  --lilac-soft: #EDE5FF;
+
+  --radius-lg: 18px;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 2px rgba(27,30,60,.06), 0 6px 20px -8px rgba(27,30,60,.12);
+  --sans: "Atkinson Hyperlegible", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --side-w: 248px;
+  --tab-h: 62px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #12142A;
+    --surface: #1C1F3D;
+    --surface-2: #232650;
+    --ink: #F1F2FA;
+    --ink-2: #C2C5DC;
+    --ink-3: #8D91AF;
+    --line: #353969;
+    --line-2: #2B2E57;
+    --marigold-soft: #4A3310;
+    --marigold-ink: #FFD98A;
+    --indigo: #A9A7FF;
+    --indigo-soft: #2A2D63;
+    --mint-soft: #123D31;
+    --mint-ink: #8FE3C4;
+    --coral-soft: #4A2018;
+    --coral-ink: #FFB3A3;
+    --sky-soft: #15325A;
+    --sky-ink: #9CC6FF;
+    --lilac-soft: #2F2158;
+    --lilac-ink: #CDB6FF;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px -8px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #12142A;
+  --surface: #1C1F3D;
+  --surface-2: #232650;
+  --ink: #F1F2FA;
+  --ink-2: #C2C5DC;
+  --ink-3: #8D91AF;
+  --line: #353969;
+  --line-2: #2B2E57;
+  --marigold-soft: #4A3310;
+  --marigold-ink: #FFD98A;
+  --indigo: #A9A7FF;
+  --indigo-soft: #2A2D63;
+  --mint-soft: #123D31;
+  --mint-ink: #8FE3C4;
+  --coral-soft: #4A2018;
+  --coral-ink: #FFB3A3;
+  --sky-soft: #15325A;
+  --sky-ink: #9CC6FF;
+  --lilac-soft: #2F2158;
+  --lilac-ink: #CDB6FF;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px -8px rgba(0,0,0,.5);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 70px); -webkit-text-size-adjust: 100%; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.55;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  background: var(--bg);
+  z-index: 40;
+}
+h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2rem, 4vw, 3rem); }
+h2 { font-size: clamp(1.55rem, 2.6vw, 2.1rem); }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.05rem; font-family: var(--sans); font-weight: 700; }
+p { margin: 0 0 .9em; }
+p:last-child { margin-bottom: 0; }
+a { color: var(--sky); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--indigo); }
+ul, ol { margin: 0 0 .9em; padding-left: 1.3em; }
+li { margin-bottom: .35em; }
+code, kbd { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .92em; background: var(--surface-2); padding: .1em .35em; border-radius: 5px; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; border-radius: 6px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+/* ---------- App frame ---------- */
+.app { display: flex; min-height: 100%; }
+.side {
+  width: var(--side-w);
+  flex: 0 0 var(--side-w);
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  height: calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+  padding: 22px 16px;
+  border-right: 1px solid var(--line);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.brand { padding: 4px 8px 0; }
+.brand .name { font-family: var(--display); font-weight: 700; font-size: 1.3rem; line-height: 1.1; }
+.brand .sub { font-size: .85rem; color: var(--ink-3); margin-top: 4px; }
+.nav { display: flex; flex-direction: column; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.nav a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; border-radius: 10px;
+  color: var(--ink-2); text-decoration: none; font-weight: 700; font-size: .98rem;
+}
+.nav a .ico { width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; font-size: 15px; flex: 0 0 26px; }
+.nav a:hover { background: var(--surface-2); color: var(--ink); }
+.nav a[aria-current="page"] { background: var(--indigo-soft); color: var(--indigo); }
+.nav a .cnt { margin-left: auto; font-size: .78rem; color: var(--ink-3); font-weight: 400; }
+.side-foot { margin-top: auto; padding: 12px; border-radius: 12px; background: var(--surface-2); font-size: .88rem; color: var(--ink-2); }
+.side-foot strong { display: block; font-size: 1.4rem; font-family: var(--display); color: var(--ink); }
+.theme-btn { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 12px; font-size: .85rem; align-self: flex-start; }
+
+.main { flex: 1 1 auto; min-width: 0; padding: 28px clamp(16px, 4vw, 48px) 60px; max-width: 1040px; }
+.topbar { display: none; }
+
+.tabbar {
+  display: none;
+  position: fixed; left: 0; right: 0; bottom: 0;
+  height: calc(var(--tab-h) + env(safe-area-inset-bottom, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  z-index: 50;
+}
+.tabbar a {
+  flex: 1 1 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  text-decoration: none; color: var(--ink-3); font-size: 10.5px; font-weight: 700; padding: 6px 2px;
+}
+.tabbar a .ico { font-size: 19px; line-height: 1; }
+.tabbar a[aria-current="page"] { color: var(--indigo); }
+
+@media (max-width: 860px) {
+  .side { display: none; }
+  .tabbar { display: flex; }
+  .main { padding: 14px 14px calc(var(--tab-h) + env(safe-area-inset-bottom, 0px) + 24px); }
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30;
+    margin: -14px -14px 14px; padding: 10px 14px;
+    background: var(--bg); border-bottom: 1px solid var(--line);
+  }
+  .topbar .name { font-family: var(--display); font-weight: 700; font-size: 1.05rem; }
+  body::before { background: var(--bg); }
+}
+
+/* ---------- Sections ---------- */
+.view { display: none; }
+.view.active { display: block; }
+.view-head { margin-bottom: 22px; }
+.view-head .lead { color: var(--ink-2); font-size: 1.05rem; max-width: 62ch; margin-top: 8px; }
+.tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; font-size: .8rem; font-weight: 700; }
+.tag.marigold { background: var(--marigold-soft); color: var(--marigold-ink); }
+.tag.mint { background: var(--mint-soft); color: var(--mint-ink); }
+.tag.coral { background: var(--coral-soft); color: var(--coral-ink); }
+.tag.sky { background: var(--sky-soft); color: var(--sky-ink); }
+.tag.lilac { background: var(--lilac-soft); color: var(--lilac-ink); }
+.tag.indigo { background: var(--indigo-soft); color: var(--indigo); }
+.tag.grey { background: var(--surface-2); color: var(--ink-2); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+.card + .card { margin-top: 14px; }
+.card.soft { background: var(--surface-2); border-color: transparent; }
+.card.callout { border-left: 6px solid var(--marigold); }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.stack { display: flex; flex-direction: column; gap: 14px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.muted { color: var(--ink-3); font-size: .9rem; }
+.small { font-size: .9rem; }
+hr.sep { border: 0; border-top: 1px solid var(--line-2); margin: 18px 0; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--surface); font-weight: 700; text-decoration: none; color: var(--ink);
+  min-height: 42px;
+}
+.btn:hover { background: var(--surface-2); color: var(--ink); }
+.btn.primary { background: var(--marigold); border-color: var(--marigold); color: #2A1A00; }
+.btn.primary:hover { filter: brightness(1.04); }
+.btn.indigo { background: var(--indigo); border-color: var(--indigo); color: #fff; }
+:root[data-theme="dark"] .btn.indigo, :root:not([data-theme="light"]) .btn.indigo { color: #12142A; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .btn.indigo { color: #fff; } }
+:root[data-theme="light"] .btn.indigo { color: #fff; }
+.btn.sm { padding: 6px 12px; min-height: 34px; font-size: .9rem; border-radius: 8px; }
+.btn.ghost { border-color: transparent; background: transparent; }
+.btn.ghost:hover { background: var(--surface-2); }
+.btn[disabled] { opacity: .5; cursor: default; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+
+/* ---------- Mission card (the one bold thing) ---------- */
+.mission {
+  background: var(--marigold);
+  color: #2A1A00;
+  border-radius: 22px;
+  padding: 26px 26px 22px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 40px -20px rgba(242,166,35,.7);
+}
+.mission::after {
+  content: ""; position: absolute; right: -40px; top: -40px; width: 180px; height: 180px;
+  border-radius: 50%; background: rgba(255,255,255,.22);
+}
+.mission .eyebrow { font-weight: 700; font-size: .9rem; opacity: .85; }
+.mission h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin: 6px 0 8px; color: #2A1A00; }
+.mission p { max-width: 56ch; }
+.mission .btn { background: #2A1A00; color: #FFE7B5; border-color: #2A1A00; }
+.mission .btn:hover { background: #3D2600; color: #fff; }
+.mission .mins { display: inline-block; background: rgba(255,255,255,.4); padding: 3px 10px; border-radius: 999px; font-weight: 700; font-size: .85rem; margin-left: 8px; }
+
+/* ---------- Progress rings ---------- */
+.rings { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.ring {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px;
+}
+.ring svg { width: 56px; height: 56px; flex: 0 0 56px; transform: rotate(-90deg); }
+.ring circle { fill: none; stroke-width: 7; }
+.ring .track { stroke: var(--line-2); }
+.ring .bar { stroke-linecap: round; transition: stroke-dashoffset .5s ease; }
+.ring .lbl { font-size: .85rem; color: var(--ink-2); line-height: 1.25; }
+.ring .lbl strong { display: block; font-size: 1.25rem; color: var(--ink); font-family: var(--display); }
+
+/* ---------- Accordion modules ---------- */
+.mod { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+.mod + .mod { margin-top: 10px; }
+.mod > summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px; font-weight: 700;
+}
+.mod > summary::-webkit-details-marker { display: none; }
+.mod > summary .chev { margin-left: auto; width: 22px; height: 22px; border-radius: 50%; background: var(--surface-2); display: grid; place-items: center; font-size: 12px; color: var(--ink-3); transition: transform .2s; flex: 0 0 22px; }
+.mod[open] > summary .chev { transform: rotate(180deg); }
+.mod[open] > summary { border-bottom: 1px solid var(--line-2); }
+.mod .body { padding: 16px; }
+.mod .dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 10px; }
+.mod.done > summary { color: var(--mint-ink); }
+.mod.done > summary .ttl::before { content: "✓ "; }
+.mod > summary .meta { font-weight: 400; font-size: .85rem; color: var(--ink-3); }
+
+/* ---------- Checklists & checks ---------- */
+.check { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; cursor: pointer; }
+.check input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--mint); flex: 0 0 22px; cursor: pointer; }
+.check span { flex: 1; }
+.check input:checked + span { color: var(--ink-3); text-decoration: line-through; }
+.done-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 10px; border: 2px solid var(--mint); background: transparent; color: var(--mint-ink); font-weight: 700; min-height: 42px; }
+.done-btn.on { background: var(--mint); color: #fff; }
+.done-btn.on::before { content: "✓"; }
+
+/* ---------- Prompt blocks ---------- */
+.prompt {
+  background: var(--surface-2); border: 1px dashed var(--line); border-radius: 12px; padding: 14px; margin: 12px 0;
+  position: relative;
+}
+.prompt pre {
+  margin: 0; white-space: pre-wrap; word-wrap: break-word; font-family: var(--sans); font-size: .95rem; line-height: 1.5;
+  max-height: 320px; overflow: auto; padding-right: 4px;
+}
+.prompt .copy { position: absolute; top: 10px; right: 10px; }
+.prompt .ttl { font-weight: 700; margin-bottom: 8px; padding-right: 90px; }
+
+/* ---------- Steps ---------- */
+.steps { counter-reset: s; list-style: none; padding: 0; margin: 10px 0; }
+.steps li { counter-increment: s; display: flex; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line-2); }
+.steps li:last-child { border-bottom: 0; }
+.steps li::before { content: counter(s); flex: 0 0 26px; height: 26px; border-radius: 50%; background: var(--indigo-soft); color: var(--indigo); display: grid; place-items: center; font-weight: 700; font-size: .85rem; }
+
+/* ---------- Before / after ---------- */
+.ba { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ba > div { border-radius: 12px; padding: 14px; }
+.ba .now { background: var(--coral-soft); color: var(--coral-ink); }
+.ba .ai { background: var(--mint-soft); color: var(--mint-ink); }
+.ba h4 { margin-bottom: 6px; }
+@media (max-width: 560px) { .ba { grid-template-columns: 1fr; } }
+
+/* ---------- Filters ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+.chip { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 12px; font-size: .88rem; font-weight: 700; color: var(--ink-2); }
+.chip[aria-pressed="true"] { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+:root[data-theme="dark"] .chip[aria-pressed="true"] { color: #12142A; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chip[aria-pressed="true"] { color: #12142A; } }
+
+/* ---------- Tool cards ---------- */
+.tool { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.tool .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.tool .fact { background: var(--surface-2); border-radius: 10px; padding: 10px 12px; font-size: .9rem; }
+.tool .fact b { display: block; color: var(--ink-3); font-size: .78rem; font-weight: 700; margin-bottom: 2px; }
+.diff { letter-spacing: 2px; }
+
+/* ---------- Quiz ---------- */
+.q { padding: 12px 0; border-top: 1px solid var(--line-2); }
+.q .opts { display: grid; gap: 8px; margin-top: 8px; }
+.q .opt { text-align: left; border: 1px solid var(--line); background: var(--surface); border-radius: 10px; padding: 10px 12px; }
+.q .opt:hover { background: var(--surface-2); }
+.q .opt.right { background: var(--mint-soft); border-color: var(--mint); color: var(--mint-ink); }
+.q .opt.wrong { background: var(--coral-soft); border-color: var(--coral); color: var(--coral-ink); }
+.q .why { margin-top: 8px; font-size: .92rem; color: var(--ink-2); }
+
+/* ---------- Assessment ---------- */
+.aq { margin-bottom: 18px; }
+.aq .opts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.aq .opt { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 8px 14px; font-weight: 700; color: var(--ink-2); }
+.aq .opt[aria-pressed="true"] { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+:root[data-theme="dark"] .aq .opt[aria-pressed="true"] { color: #12142A; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .aq .opt[aria-pressed="true"] { color: #12142A; } }
+.result { border-left: 6px solid var(--mint); }
+
+/* ---------- Day cards ---------- */
+.week { margin-top: 22px; }
+.week-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.week-head .wk { font-family: var(--display); font-size: 1.35rem; font-weight: 700; }
+.day .dnum { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; font-weight: 700; font-size: .9rem; flex: 0 0 36px; background: var(--surface-2); color: var(--ink-2); }
+.day.today .dnum { background: var(--marigold); color: #2A1A00; }
+.day.done .dnum { background: var(--mint-soft); color: var(--mint-ink); }
+
+/* ---------- Tracker ---------- */
+.form { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; align-items: end; }
+.form label { font-size: .85rem; font-weight: 700; color: var(--ink-2); display: block; }
+.form input, .form select, textarea.note {
+  width: 100%; font: inherit; padding: 9px 10px; border: 1px solid var(--line); border-radius: 9px;
+  background: var(--surface); color: var(--ink); margin-top: 4px;
+}
+textarea.note { min-height: 70px; resize: vertical; margin-top: 8px; }
+.tbl-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+th, td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
+th { color: var(--ink-3); font-size: .8rem; }
+.stat { font-family: var(--display); font-size: 2.2rem; font-weight: 700; line-height: 1; }
+
+/* ---------- Badges ---------- */
+.badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+.badge { border: 1px solid var(--line); border-radius: 12px; padding: 12px; text-align: center; font-size: .85rem; color: var(--ink-3); background: var(--surface); }
+.badge .em { font-size: 26px; display: block; filter: grayscale(1); opacity: .45; }
+.badge.on { color: var(--ink); border-color: var(--marigold); background: var(--marigold-soft); }
+.badge.on .em { filter: none; opacity: 1; }
+
+/* ---------- Toast ---------- */
+.toast {
+  position: fixed; left: 50%; transform: translateX(-50%) translateY(20px);
+  bottom: calc(var(--tab-h) + env(safe-area-inset-bottom, 0px) + 16px);
+  background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 999px; font-weight: 700;
+  opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 60; font-size: .95rem;
+}
+@media (min-width: 861px) { .toast { bottom: 24px; } }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <div class="name">Swarnima’s AI Playbook</div>
+      <div class="sub">Meta Ads, minus the busywork</div>
+    </div>
+    <ul class="nav" id="nav"></ul>
+    <button class="theme-btn" id="themeBtn" type="button">Switch to dark mode</button>
+    <div class="side-foot">
+      <strong id="sideHours">0 h</strong>
+      a week you could get back, based on your tracker
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="topbar">
+      <div class="name" id="topTitle">Start</div>
+      <button class="btn sm ghost" id="themeBtnM" type="button" aria-label="Toggle dark mode">◐</button>
+    </div>
+
+    <!-- ===================== START ===================== -->
+    <section class="view" id="view-start" data-title="Start">
+      <div class="view-head">
+        <span class="tag marigold">Start here</span>
+        <h1 style="margin-top:10px">Hi Swarnima. This playbook is built around your actual job.</h1>
+        <p class="lead">Not “AI for marketers”. Specifically: Meta Ads campaigns, client reports, creative briefs, agency emails and the rest of your week at Publisher’s Internationalé. Every section answers one question: how do I make tomorrow’s work easier?</p>
+      </div>
+
+      <div id="missionBox"></div>
+
+      <div class="card" style="margin-top:16px">
+        <h3>Your progress</h3>
+        <div class="rings" id="rings" style="margin-top:12px"></div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>How this playbook was built (and what to double-check)</h3>
+        <p style="margin-top:8px">Your LinkedIn profile was read through a public search snapshot, because LinkedIn blocks direct access. Here is what it says, so you can correct anything that has changed:</p>
+        <div class="grid-2" style="margin-top:10px">
+          <div class="card soft">
+            <h4>What the profile shows</h4>
+            <ul class="small" style="margin-top:6px">
+              <li>Digital Marketing Executive, headline “Digital Marketer | Meta Ads”</li>
+              <li>Publisher’s Internationalé, since July 2024, based in Mumbai</li>
+              <li>MCA (Computer Science), VIT, 2020–2022</li>
+              <li>Focus: brand awareness, lead generation, growth through digital platforms</li>
+            </ul>
+          </div>
+          <div class="card soft">
+            <h4>What that implies for your week</h4>
+            <ul class="small" style="margin-top:6px">
+              <li>Your company is an international media representation business (Australian HQ, offices across Asia). Your clients are advertisers, agencies and media partners, so reporting and communication are a big share of the work.</li>
+              <li>Your CS background means you can go further than most marketers on automation. Weeks 3–4 lean into that gently.</li>
+              <li>The snapshot may be a few months old. The 2-minute skills check lets you correct the picture.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card callout" style="margin-top:14px">
+        <h3>House rules (designed for an ADHD brain)</h3>
+        <ul style="margin-top:8px">
+          <li><strong>15 minutes is a full session.</strong> Every day on the roadmap fits in 15–25 minutes. Stopping early is allowed.</li>
+          <li><strong>One tab open.</strong> Each module tells you exactly which single tool to open.</li>
+          <li><strong>Done beats perfect.</strong> The first time you use a prompt it will be 70% right. That is the point: you fix 30% instead of writing 100%.</li>
+          <li><strong>No streaks, no guilt.</strong> Progress counts days completed, never days missed. Pick up wherever you left off.</li>
+          <li><strong>Real work only.</strong> Every exercise uses a live campaign, a real email, a real report. You finish the exercise and the work is also done.</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Your week, before and after</h3>
+        <p class="muted" style="margin-top:6px">Typical for a Meta Ads executive at a media rep firm. Adjust the numbers in your tracker once you have measured your own.</p>
+        <div class="ba" style="margin-top:12px">
+          <div class="now">
+            <h4>Now (roughly 9–12 hours a week on repeatable work)</h4>
+            <ul class="small">
+              <li>Monday: 2 hours building the weekly performance report from CSV exports</li>
+              <li>Ad copy and variations: 1.5 hours of staring at a blank doc</li>
+              <li>Client and agency emails: 45 minutes a day, lots of re-reading</li>
+              <li>Meeting notes and follow-ups: 1 hour, half of it lost</li>
+              <li>Checking dashboards for spend and CPA: 30 minutes a day</li>
+              <li>Research for a new client or brief: 2 hours, mostly tabs</li>
+            </ul>
+          </div>
+          <div class="ai">
+            <h4>After this playbook (roughly 3–4 hours, with better output)</h4>
+            <ul class="small">
+              <li>Monday: 25 minutes. Numbers pull themselves, AI drafts the story, you check and send</li>
+              <li>Ad copy: 25 minutes. Ten angles in one prompt, you pick two to test</li>
+              <li>Emails: 20 minutes a day. Draft, fix tone, send</li>
+              <li>Notes: 5 minutes. Recorder captures, AI extracts actions into your list</li>
+              <li>Dashboards: 0 minutes. Alerts come to you when something breaks</li>
+              <li>Research: 30 minutes with sources cited</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Milestones</h3>
+        <div class="badges" id="badges" style="margin-top:12px"></div>
+      </div>
+
+      <details class="mod" style="margin-top:14px" id="safetyMod">
+        <summary><span class="dot" style="background:var(--coral)"></span><span class="ttl">Before you paste anything: data, privacy and work rules</span><span class="chev">▾</span></summary>
+        <div class="body">
+          <p>Most of this playbook uses consumer AI tools. They are safe for most of your work if you follow a few habits.</p>
+          <h4>Never paste</h4>
+          <ul class="small">
+            <li>Ad account access tokens, passwords, or anything from Business Manager settings</li>
+            <li>Lead data with names, phone numbers or emails (lead forms, CRM exports). Strip the personal columns first</li>
+            <li>Client contracts or unreleased financials, unless your company has approved a business-tier AI tool for that</li>
+          </ul>
+          <h4>Do this once, today</h4>
+          <ul class="small">
+            <li>ChatGPT: Settings → Data controls → turn off “Improve the model for everyone”. Claude: Settings → Privacy → review the training setting. Gemini: Activity settings.</li>
+            <li>Ask your manager or IT what the company position on AI tools is. If none exists, say you are using them for drafting and analysis and that you anonymise client names (“Client A”).</li>
+            <li>Meta may add an AI info label to ads made or materially edited with its generative features. Tell clients before you turn those features on.</li>
+            <li>Free meeting-recorder tiers sometimes use your audio to train models. Check the privacy page before recording a client call, and tell attendees you are recording.</li>
+            <li>Any automation that sends something to a client gets a human approval step. Always.</li>
+            <li>AI gets numbers wrong with total confidence. Check three figures against the source every time.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <!-- ===================== CHECK ===================== -->
+    <section class="view" id="view-check" data-title="Skills check">
+      <div class="view-head">
+        <span class="tag indigo">2 minutes</span>
+        <h2 style="margin-top:10px">Skills check</h2>
+        <p class="lead">Eight taps. The result sets your starting level, picks your first three automations, and trims the tool list so you are not choosing between twenty apps.</p>
+      </div>
+      <div class="card" id="assessBox"></div>
+      <div id="assessResult" style="margin-top:14px"></div>
+    </section>
+
+    <!-- ===================== TOOLS ===================== -->
+    <section class="view" id="view-tools" data-title="Tools">
+      <div class="view-head">
+        <span class="tag sky">Introduced gradually</span>
+        <h2 style="margin-top:10px">Your tool kit</h2>
+        <p class="lead">Fourteen tools, in the order you meet them. Start with the first group only. You unlock the rest as the roadmap introduces them, and most have a useful free tier.</p>
+      </div>
+      <div class="chips" id="toolChips"></div>
+      <div id="toolList"></div>
+    </section>
+
+    <!-- ===================== AUTOMATE ===================== -->
+    <section class="view" id="view-automate" data-title="Automate">
+      <div class="view-head">
+        <span class="tag coral">The valuable part</span>
+        <h2 style="margin-top:10px">What you can actually automate</h2>
+        <p class="lead">Fifteen real opportunities from a Meta Ads executive’s week. Each one shows how you probably do it now, the AI way, exact steps, a prompt or workflow, and a time estimate. Tick “Tried it” when you have run it once.</p>
+      </div>
+      <div class="card soft">
+        <div class="row">
+          <span class="tag mint">AI-assisted</span><span class="small muted">You run it, AI drafts. Minutes to set up.</span>
+        </div>
+        <div class="row" style="margin-top:6px">
+          <span class="tag sky">Semi-automated</span><span class="small muted">A tool does the collecting, AI does the thinking, you approve.</span>
+        </div>
+        <div class="row" style="margin-top:6px">
+          <span class="tag lilac">Fully automated</span><span class="small muted">Runs on its own. You get a notification.</span>
+        </div>
+      </div>
+      <div class="chips" id="autoChips"></div>
+      <div id="autoList"></div>
+    </section>
+
+    <!-- ===================== DAYS ===================== -->
+    <section class="view" id="view-days" data-title="30 days">
+      <div class="view-head">
+        <span class="tag mint">15–25 min a day</span>
+        <h2 style="margin-top:10px">The 30-day programme</h2>
+        <p class="lead">Four weeks. Every seventh day is a rest-and-review day with a three-question quiz and nothing new to learn. Today’s card is highlighted; everything else stays folded away.</p>
+      </div>
+      <div id="dayList"></div>
+    </section>
+
+    <!-- ===================== PROMPTS ===================== -->
+    <section class="view" id="view-prompts" data-title="Prompts">
+      <div class="view-head">
+        <span class="tag lilac">Copy and use</span>
+        <h2 style="margin-top:10px">Prompt library</h2>
+        <p class="lead">Eleven prompts written for your job. Replace anything in [square brackets]. Save the ones you use weekly as a Claude Project, a Custom GPT, or a Gemini Gem so they become one click.</p>
+      </div>
+      <div class="card soft" style="margin-bottom:14px">
+        <h4>The four-part prompt (the only prompting theory you need)</h4>
+        <ol class="small" style="margin-top:6px">
+          <li><strong>Role:</strong> who the AI is (“You are a senior Meta Ads strategist”).</li>
+          <li><strong>Context:</strong> client, audience, goal, what has happened so far. Paste real material.</li>
+          <li><strong>Task:</strong> one clear verb. Draft, summarise, compare, list, rewrite.</li>
+          <li><strong>Format:</strong> length, structure, tone, what to leave out. “Three bullets, under 60 words each, no exclamation marks.”</li>
+        </ol>
+        <p class="small muted">Then iterate: “shorter”, “more formal”, “give me five more angles”, “which of these would you cut and why”. The second message is where the quality comes from.</p>
+      </div>
+      <div id="promptList"></div>
+    </section>
+
+    <!-- ===================== TRACKER ===================== -->
+    <section class="view" id="view-tracker" data-title="Tracker">
+      <div class="view-head">
+        <span class="tag indigo">Your numbers</span>
+        <h2 style="margin-top:10px">Automation ideas tracker</h2>
+        <p class="lead">Log every repetitive task you notice. The tracker estimates the hours per week you could reclaim, so you can show your manager a number, not a vibe.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card"><div class="stat" id="stHours">0</div><div class="muted">hours a week reclaimable</div></div>
+        <div class="card"><div class="stat" id="stLive">0</div><div class="muted">automations live</div></div>
+        <div class="card"><div class="stat" id="stIdeas">0</div><div class="muted">ideas logged</div></div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h3>Add an idea</h3>
+        <div class="form" style="margin-top:10px">
+          <div><label for="tName">Task</label><input id="tName" placeholder="Weekly report for Client A"></div>
+          <div><label for="tFreq">How often</label><select id="tFreq"><option value="daily">Daily</option><option value="weekly" selected>Weekly</option><option value="monthly">Monthly</option></select></div>
+          <div><label for="tNow">Minutes it takes now</label><input id="tNow" type="number" min="1" value="60"></div>
+          <div><label for="tAi">Minutes with AI (guess)</label><input id="tAi" type="number" min="0" value="20"></div>
+          <div><label for="tStatus">Status</label><select id="tStatus"><option value="idea">Idea</option><option value="trying">Trying</option><option value="live">Live</option></select></div>
+          <div><button class="btn primary" id="tAdd" type="button" style="width:100%">Add to tracker</button></div>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h3>Ideas</h3>
+        <div class="tbl-wrap" style="margin-top:10px"><table id="tTable"></table></div>
+        <div class="btn-row"><button class="btn sm" id="tCopy" type="button">Copy as text</button><button class="btn sm ghost" id="tReset" type="button">Clear all playbook data</button></div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h3>Wins log</h3>
+        <p class="muted" style="margin-top:4px">Tiny wins count. “Report took 20 minutes instead of 2 hours” is exactly what goes here.</p>
+        <div class="row" style="margin-top:10px"><input id="wText" placeholder="What went well?" style="flex:1;min-width:200px;font:inherit;padding:9px 10px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink)"><button class="btn" id="wAdd" type="button">Log win</button></div>
+        <ul id="wList" style="margin-top:12px"></ul>
+      </div>
+    </section>
+  </main>
+
+  <nav class="tabbar" id="tabbar" aria-label="Sections"></nav>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const GROUPS = {
+  1: { label: "Week 1: start with these", color: "marigold" },
+  2: { label: "Week 2: add when ready", color: "sky" },
+  3: { label: "Week 3: automation", color: "coral" },
+  4: { label: "Week 4: advanced", color: "lilac" }
+};
+
+const TOOLS = [
+  {
+    id: "chatgpt", group: 1, cat: "Assistant", name: "ChatGPT",
+    what: "A general AI assistant you talk to in plain English. Drafts, rewrites, summarises, analyses uploaded files, and (on paid plans) runs deeper research and multi-step tasks.",
+    why: "It is the fastest way to turn a blank page into a 70% draft, for anything: ad copy, report narratives, emails, briefs. The free tier is enough to start.",
+    work: "Paste a campaign CSV and ask what changed. Generate ten primary-text variations for a client. Turn a messy brief email into a structured campaign plan.",
+    example: "Upload last week’s campaign export and ask: “Which three ad sets had the worst CPA and what is one hypothesis for each?” You get a draft analysis in a minute; you verify and send.",
+    diff: 1,
+    cost: "Free (unlimited everyday chats, limits on uploads and images, shows ads in some regions). Go is a cheaper mid-tier that launched in India first; Plus is about $20/month and adds full Deep Research, Projects and agent features.",
+    link: "https://chatgpt.com",
+    links: [["Prompting guide (OpenAI)", "https://platform.openai.com/docs/guides/prompt-engineering"]]
+  },
+  {
+    id: "claude", group: 1, cat: "Assistant", name: "Claude",
+    what: "An AI assistant from Anthropic. Strong at long documents, careful tone, and structured writing. Projects let you store files and instructions so every new chat already knows your client.",
+    why: "For proposals, client-facing emails and anything where tone matters, many marketers prefer its writing. Projects are a quiet superpower for ADHD: context lives in one place, so you never re-explain.",
+    work: "One Project per client: their brand guide, your last three reports, the rate card. Then “draft the monthly summary in our usual format” just works.",
+    example: "Create a Project called “Report Narrator” with your report template as a file. Each Monday, paste the numbers and ask for the narrative. Two minutes instead of forty.",
+    diff: 1,
+    cost: "Free tier available. Pro (about $20/month) adds more usage, more Projects and Research. Check claude.com/pricing for current terms.",
+    link: "https://claude.ai",
+    links: [["Current plans", "https://claude.com/pricing"]]
+  },
+  {
+    id: "metaai", group: 1, cat: "Meta Ads", name: "Meta AI inside Ads Manager",
+    what: "The AI you already have. Advantage+ Creative generates text variations, expands images, creates backgrounds, animates stills into Reels-ready video and adds music. The Meta AI business assistant can answer questions about your account and, in rolling-out markets, run scheduled tasks and alerts.",
+    why: "No new tool, no new login, no data leaving Meta. Meta reports millions of advertisers already use the generative features, and in its own tests they saved roughly five hours a week.",
+    work: "Upload one hero image and let Advantage+ Creative produce placement-ready variants. Ask the assistant why a campaign’s delivery dropped. Turn a static product shot into a short video ad for a client without a video budget.",
+    example: "At ad level, upload the creative, open Advantage+ creative, tick text variations and image expansion, review what it made, keep the good ones. Meta may add an AI info label to ads materially edited with these features, so tell the client first.",
+    diff: 1,
+    cost: "Free with your ad account. Feature availability varies by account, country and campaign type.",
+    link: "https://adsmanager.facebook.com",
+    links: [["Meta Business Help Center", "https://www.facebook.com/business/help"], ["Ad Library (competitor research)", "https://www.facebook.com/ads/library"]]
+  },
+  {
+    id: "goblin", group: 1, cat: "ADHD", name: "Goblin.tools",
+    what: "A free set of tiny AI utilities built for neurodivergent brains. Magic ToDo breaks any task into small steps (with a “spiciness” slider for how granular); Formalizer rewrites tone; Estimator guesses how long something takes.",
+    why: "Task paralysis is the real productivity killer. “Build the quarterly deck” becomes eight steps, the first of which takes four minutes. That is enough to start.",
+    work: "Paste “prepare the Q4 performance review for Client A” and get the steps. Use Formalizer to turn a blunt note into a polite client email, or the reverse when a client email is too vague.",
+    example: "Type the one task you have been avoiding all week. Set spiciness to medium. Do only step one.",
+    diff: 1,
+    cost: "Free (optional one-off donation). Accounts are now available if you want lists to sync.",
+    link: "https://goblin.tools"
+  },
+  {
+    id: "gemini", group: 2, cat: "Data", name: "Gemini (and Gemini in Google Sheets)",
+    what: "Google’s AI assistant. The free Gemini app analyses uploaded spreadsheets and CSVs; inside Google Workspace business plans, a Gemini side panel sits in Sheets, Docs and Gmail and can build tables, charts and formulas from a sentence.",
+    why: "Most Meta Ads reporting ends up in a spreadsheet. Being able to ask the spreadsheet questions removes the part where you pivot, VLOOKUP and swear.",
+    work: "“Add a column that flags any campaign spending more than 110% of its daily budget.” “Chart CPA by ad set for the last 14 days.” “Summarise this sheet for a client in four bullets.”",
+    example: "Upload a campaign export to gemini.google.com and ask for the top five and bottom five ads by CTR, with a one-line note on what the winners have in common.",
+    diff: 1,
+    cost: "Gemini app: free tier is generous; AI Pro is about $20/month. Gemini in Sheets requires a Workspace business plan (check whether your company already has one).",
+    link: "https://gemini.google.com",
+    links: [["Gemini in Sheets help", "https://support.google.com/docs/answer/14218565"]]
+  },
+  {
+    id: "notebooklm", group: 2, cat: "Research", name: "NotebookLM",
+    what: "A research notebook from Google. Upload sources (PDFs, Docs, Slides, Sheets, websites, YouTube links) and ask questions; every answer cites the exact source passage. It can also generate audio overviews and study tables.",
+    why: "It only answers from what you gave it, so it does not invent facts about your client. Perfect for onboarding to a new client or vertical without ten open tabs.",
+    work: "One notebook per client: their website, media kit, previous campaign decks, the brief. Ask “what are their three stated business goals and which Meta objectives map to each?”",
+    example: "Drop a client’s 40-slide brand deck in and ask for the audience segments, tone rules and banned claims as a checklist you can keep next to Ads Manager.",
+    diff: 1,
+    cost: "Free (limits on notebooks and sources per notebook); more with Google AI Pro.",
+    link: "https://notebooklm.google.com"
+  },
+  {
+    id: "fathom", group: 2, cat: "Meetings", name: "Fathom (or Granola)",
+    what: "AI meeting recorders. Fathom joins your Zoom, Meet or Teams call as a bot, transcribes and writes a summary with action items; its free plan has unlimited recording. Granola records from your laptop with no bot and lets you type alongside, with a free tier of roughly 25 meetings.",
+    why: "You stop choosing between listening and typing. Actions are extracted for you, which removes the “what did I promise?” anxiety afterwards.",
+    work: "Client review calls, agency briefings, internal stand-ups. The summary becomes the follow-up email and the task list.",
+    example: "Record a client review call, then paste the summary into the Actions Extractor prompt. Send the follow-up within ten minutes of hanging up.",
+    diff: 1,
+    cost: "Fathom: free plan with unlimited transcription, paid from about $15/user/month. Granola: free tier (limited history; check whether free-tier data is used for training), Business about $14/user/month.",
+    link: "https://fathom.video",
+    links: [["Granola", "https://granola.ai"]]
+  },
+  {
+    id: "canva", group: 2, cat: "Creative", name: "Canva Magic Studio",
+    what: "Canva’s AI features: Magic Resize for every Meta placement in one click, Magic Write for captions, background removal, and image generation inside the editor you may already use.",
+    why: "Resizing one creative for Feed, Stories, Reels and right column is the most boring task in paid social. It becomes a click.",
+    work: "Take an approved 1:1 creative and output 4:5 and 9:16 versions with safe-zone checks. Draft three caption options next to the design.",
+    example: "Upload the client’s hero image, Magic Resize to all Meta sizes, export, upload to Ads Manager. Five minutes.",
+    diff: 1,
+    cost: "Free tier with limited Magic uses; Pro is paid. Your company may already have a team plan.",
+    link: "https://www.canva.com"
+  },
+  {
+    id: "perplexity", group: 2, cat: "Research", name: "Perplexity",
+    what: "A search engine that answers in prose with numbered citations. Good for quick market stats, benchmark CPMs, platform updates and “what changed in Meta Ads this month”.",
+    why: "When a client asks “what is a normal CTR for travel in India?”, you get a sourced answer instead of a confident guess.",
+    work: "Pre-pitch research, benchmark checks, keeping up with Advantage+ changes without reading every blog.",
+    example: "Ask: “Average Meta Ads CPM and CTR benchmarks for Indian e-commerce in 2026, with sources.” Read the sources before quoting them.",
+    diff: 1,
+    cost: "Free tier; Pro about $20/month.",
+    link: "https://www.perplexity.ai"
+  },
+  {
+    id: "make", group: 3, cat: "Automation", name: "Make",
+    what: "A visual, no-code automation builder. You draw a flow: trigger (a new row, an email, a form, a schedule) → modules (filter, format, send, create). It connects 3,000+ apps including Google Sheets, Gmail, Slack, Meta Lead Ads and the big AI models.",
+    why: "The best balance of power and price for a marketer. The free plan (1,000 credits a month, two active scenarios, 15-minute minimum interval) runs real workflows. The visual canvas suits a visual thinker.",
+    work: "Lead form → Google Sheet + notification. Monday 9am → fetch report sheet → ask an AI module to summarise → draft an email to you. Fathom summary → Google Tasks.",
+    example: "Scenario: every weekday at 8am, read the spend sheet, if any campaign is over 110% of budget, send a Slack or WhatsApp message with the campaign name and the number.",
+    diff: 2,
+    cost: "Free: 1,000 credits/month. Core from about $9–12/month for 10,000 credits.",
+    link: "https://www.make.com",
+    links: [["Make Academy (free courses)", "https://academy.make.com"]]
+  },
+  {
+    id: "zapier", group: 3, cat: "Automation", name: "Zapier",
+    what: "The easiest automation tool, with the biggest app library (9,000+). Linear steps: when this happens, do that. Zapier Agents add AI that can read data and take actions.",
+    why: "If Make feels like too much canvas, Zapier gets a first automation live in ten minutes. Its free plan is small (100 tasks a month, two-step Zaps), so it suits low-volume flows.",
+    work: "Fathom → Google Tasks. Gmail label “Report request” → Sheet row. Meta Lead Ads → email the client.",
+    example: "Zap: new Meta lead → add row to the client’s Google Sheet → send a thank-you email from your Gmail template.",
+    diff: 1,
+    cost: "Free: 100 tasks/month, two-step Zaps. Professional from about $20/month. Zapier Agents have a separate free tier.",
+    link: "https://zapier.com"
+  },
+  {
+    id: "connector", group: 3, cat: "Data", name: "Meta Ads data connectors + Looker Studio",
+    what: "Add-ons that pull Ads Manager data into Google Sheets or Looker Studio on a schedule, so the numbers are already there every morning. Porter Metrics (free for up to 3 ad accounts with 30-day history), Two Minute Reports (from about $9/month), Dataslayer (trial). Looker Studio itself is free and makes client-shareable dashboards.",
+    why: "This removes the single most repetitive task in your week: exporting CSVs. Once data lands in a sheet, everything else (alerts, summaries, dashboards) can be automated.",
+    work: "Daily spend, impressions, clicks, CPA by campaign into one sheet per client. A Looker Studio dashboard the client can open themselves, which cuts “can you send me the numbers?” emails.",
+    example: "Connect one ad account with Porter Metrics, schedule a daily pull into Sheets, add a pacing column, point Looker Studio at the sheet, share the link with the account manager.",
+    diff: 2,
+    cost: "Looker Studio: free. Connectors: free tiers exist but are limited; budget $9–20/month per account if you rely on one. Ads Manager’s own scheduled email reports are free and a decent first step.",
+    link: "https://lookerstudio.google.com",
+    links: [["Porter Metrics", "https://portermetrics.com"], ["Two Minute Reports", "https://twominutereports.com"]]
+  },
+  {
+    id: "assistants", group: 4, cat: "Assistant", name: "Your own assistants: Custom GPTs, Claude Projects, Gemini Gems",
+    what: "All three major assistants let you save a reusable persona: instructions, files, tone, format. You open it and it already knows your job.",
+    why: "This is how a prompt you like becomes a tool you use. For ADHD, it also removes the set-up friction that stops you using AI on busy days.",
+    work: "“Swarnima’s Ads Assistant”: knows your clients (anonymised), your report format, Meta character limits, your tone, and what to always ask before drafting.",
+    example: "Build one on Day 22. Test it with the Monday report and an ad copy request. Refine the instructions once a week for a month.",
+    diff: 2,
+    cost: "Custom GPTs need ChatGPT Plus to create. Claude Projects: free tier includes some; Pro gives more. Gemini Gems: free.",
+    link: "https://chatgpt.com/gpts",
+    links: [["Claude Projects", "https://claude.ai"], ["Gemini Gems", "https://gemini.google.com/gems"]]
+  },
+  {
+    id: "agents", group: 4, cat: "Automation", name: "AI agents (Zapier Agents, Make AI Agents, n8n)",
+    what: "Agents are automations that can decide steps themselves: read a sheet, judge what matters, draft a message, wait for your approval. Zapier Agents and Make AI Agents are the no-code entry points. n8n is the open-source power tool: free to self-host, unlimited runs, code nodes, and a strong AI-agent node. With your CS degree it is a realistic Week 5+ step.",
+    why: "This is where “fully automated” lives: the Monday report that writes itself and waits for your approval. It is also where things go wrong quietly, so you add it last and keep humans in the loop.",
+    work: "Monday agent: pull last week’s numbers, compare to the previous week, draft the client summary, send it to you for approval. Meta is also rolling out an ads MCP server and CLI, which lets assistants like Claude read and act on ad accounts directly. Treat that as experimental for now.",
+    example: "Zapier Agent: “Every Monday 9am, open this Google Sheet, summarise changes versus last week in five bullets, create a Google Doc, and email me the link.”",
+    diff: 3,
+    cost: "Zapier Agents: free tier (around 400 activities/month). Make AI Agents: included on all plans, AI steps use credits. n8n: free self-hosted; cloud from about $20/month.",
+    link: "https://n8n.io",
+    links: [["Zapier Agents", "https://zapier.com/agents"], ["Make AI Agents", "https://www.make.com/en/ai-agents"]]
+  }
+];
+</script>
+<script>
+const TYPES = { assist: ["AI-assisted", "mint"], semi: ["Semi-automated", "sky"], full: ["Fully automated", "lilac"] };
+
+const AUTOS = [
+  {
+    id: "a1", title: "The weekly client performance report", type: "assist", diff: "Easy", hours: "1.5–3 h/week",
+    tools: "Ads Manager export → ChatGPT or Claude. Later: a data connector + Gemini.",
+    problem: "Every week: pull numbers, build a table, then write “what happened and why” for the account manager or client.",
+    today: "Export CSV, copy into the template, stare at the blank commentary box, write it from scratch, second-guess the tone.",
+    ai: "Export once, upload the CSV with a fixed prompt that knows your format. You get the narrative, the three recommendations and the next-week plan in one go. You check the numbers and edit the voice.",
+    steps: [
+      "In Ads Manager, set the date range to last 7 days, campaign level, and export as CSV.",
+      "Open ChatGPT or Claude and paste the Report Narrator prompt from the Prompt library.",
+      "Attach the CSV (or paste the table). Add one line of context: anything unusual that week.",
+      "Read the draft. Check three numbers against the sheet. Fix anything that is wrong.",
+      "Paste into your template and send. Save the prompt as a Project or Custom GPT so next week is two clicks."
+    ],
+    prompt: "p1",
+    upgrade: "Week 3: a connector drops the data into Sheets automatically. Week 4: an agent drafts the narrative on Monday morning and waits for your approval."
+  },
+  {
+    id: "a2", title: "Ad copy variations that respect Meta’s limits", type: "assist", diff: "Easy", hours: "1–2 h/week",
+    tools: "ChatGPT or Claude, plus Meta’s own text variations in Advantage+ creative.",
+    problem: "Each campaign needs several primary texts, headlines and descriptions, in different angles, within character limits.",
+    today: "Write two versions, run out of ideas, reuse last month’s, hope the client does not notice.",
+    ai: "One prompt returns ten angles (benefit, social proof, urgency, question, objection), each with primary text, headline and description, each under the recommended lengths, with a note on who it targets.",
+    steps: [
+      "Paste the Ad Copy Generator prompt. Fill in client, product, audience, offer and one thing the client never wants said.",
+      "Ask for ten variations. Then ask: “Which three would you test first and why?”",
+      "Pick two to test. Paste them into the ad, and tick Meta’s text variations to let it generate more from your base copy.",
+      "Keep a Copy Bank sheet of winners by client and angle. Paste it into future prompts as examples."
+    ],
+    prompt: "p2"
+  },
+  {
+    id: "a3", title: "Messy client brief → structured campaign plan", type: "assist", diff: "Easy", hours: "1 h/week",
+    tools: "ChatGPT or Claude.",
+    problem: "Briefs arrive as a long email, a forwarded chat, or a deck with half the information missing.",
+    today: "Read it four times, start building the campaign, realise the budget split and KPI were never stated, email back.",
+    ai: "Paste the brief. Get back a one-page plan: objective, audience hypotheses, budget split, placements, KPIs, creative needs, timeline, and a list of the questions the client still needs to answer. Send the questions in the first reply.",
+    steps: [
+      "Paste the Brief-to-Plan prompt and the raw brief (anonymise the client name if you prefer).",
+      "Review the “open questions” list first. Send those to the client today.",
+      "Use the plan section as the skeleton for the campaign set-up and the kick-off email."
+    ],
+    prompt: "p3"
+  },
+  {
+    id: "a4", title: "Client and agency emails in half the time", type: "assist", diff: "Easy", hours: "1–2 h/week",
+    tools: "ChatGPT or Claude, Gmail’s “Help me write” if your Workspace plan has it, Goblin.tools Formalizer.",
+    problem: "Status updates, delay explanations, budget change requests, chasing approvals. Each one is short but costs ten minutes of wording anxiety.",
+    today: "Draft, reread, soften, reread, delete the soft bit, send, worry.",
+    ai: "Describe what you need to say in one blunt sentence and get three versions: friendly, neutral, firm. Pick one, tweak one word, send.",
+    steps: [
+      "Paste the Email Reply prompt with the email you received and one line on what you want to happen.",
+      "Choose a version. Edit only the specifics.",
+      "For repeat emails (weekly update, approval chase), save your favourite as a Gmail template."
+    ],
+    prompt: "p4"
+  },
+  {
+    id: "a5", title: "Meeting notes → action items → your task list", type: "semi", diff: "Easy", hours: "1–2 h/week",
+    tools: "Fathom or Granola (record), ChatGPT or Claude (extract), optionally Zapier or Make (send to tasks).",
+    problem: "Client reviews and agency calls produce promises you half remember by Thursday.",
+    today: "Type notes while trying to listen, miss half, reconstruct from memory, forget the follow-up.",
+    ai: "The recorder transcribes and summarises. The Actions Extractor prompt turns the summary into a table: action, owner, deadline, and a draft follow-up email. Week 3 adds a Zap that pushes actions to Google Tasks automatically.",
+    steps: [
+      "Install Fathom (bot joins the call) or Granola (no bot, records from your laptop). Tell attendees you are recording.",
+      "After the call, open the summary and paste it into the Actions Extractor prompt.",
+      "Copy the action table into your task list. Send the follow-up email within ten minutes while it is fresh.",
+      "Week 3: Zapier “new Fathom summary → create Google Task per action item”."
+    ],
+    prompt: "p5"
+  },
+  {
+    id: "a6", title: "New client or vertical research in 20 minutes", type: "assist", diff: "Easy", hours: "1–2 h/week",
+    tools: "NotebookLM (client materials), Perplexity (market facts with sources).",
+    problem: "A new advertiser in a vertical you do not know (say, education or travel). You need audience, competitors, benchmarks and tone fast.",
+    today: "Fifteen tabs, a half-read PDF, notes in three places.",
+    ai: "Put everything the client sent into a NotebookLM notebook and interview it. Use Perplexity for outside facts and benchmarks, then check the sources.",
+    steps: [
+      "Create a notebook named after the client. Add their website, media kit, deck, the brief.",
+      "Ask the Client Onboarding questions from the Prompt library. Save the answers as a one-page client sheet.",
+      "In Perplexity, ask for category benchmarks and the top three competitors’ positioning. Open the sources before quoting."
+    ],
+    prompt: "p6"
+  },
+  {
+    id: "a7", title: "Competitor ad swipe file from the Meta Ad Library", type: "assist", diff: "Easy", hours: "1 h/week",
+    tools: "Meta Ad Library (free), ChatGPT or Claude.",
+    problem: "Clients ask “what are competitors doing?” and you need patterns, not screenshots.",
+    today: "Scroll the Ad Library, screenshot a few, paste into a deck, write “they are using video” and move on.",
+    ai: "Copy the text of ten competitor ads (and describe the visuals in a line each). The Pattern Finder prompt returns hooks, offers, formats, claims they all make, gaps nobody fills, and five ideas for your client.",
+    steps: [
+      "Open facebook.com/ads/library, search the competitor, filter to active ads.",
+      "Copy primary text and headline for ten ads into a note. Add a one-line visual description for each.",
+      "Paste into the Pattern Finder prompt. Save the output in a Swipe File sheet per client."
+    ],
+    prompt: "p7"
+  },
+  {
+    id: "a8", title: "Performance alerts that find you", type: "full", diff: "Medium", hours: "1–2 h/week, plus fewer overspend surprises",
+    tools: "Meta Automated Rules (free, built into Ads Manager). Optional: the Meta AI business assistant’s scheduled alerts where available.",
+    problem: "Checking every account twice a day for CPA spikes, budget overruns or paused ads.",
+    today: "Open Ads Manager, scan, feel vaguely anxious, close, repeat after lunch.",
+    ai: "Rules watch the accounts for you and email or notify when a threshold is crossed. You check only when something needs you.",
+    steps: [
+      "Ads Manager → Rules → Create a new rule. Scope: all active campaigns for one client.",
+      "Rule 1: if daily spend is greater than 110% of daily budget, notify me (do not auto-pause on day one).",
+      "Rule 2: if cost per result is greater than 1.5× your target over the last 3 days, notify me.",
+      "Rule 3: if impressions drop below a sensible floor for two days, notify me (catches rejected or stuck ads).",
+      "After two weeks of trusting the alerts, consider letting rule 1 reduce budget automatically."
+    ],
+    workflow: "Trigger: Meta Automated Rule → Action: email notification. Optional: a Zapier filter on that email → WhatsApp or Slack message to you."
+  },
+  {
+    id: "a9", title: "Daily spend pacing sheet that fills itself", type: "full", diff: "Medium", hours: "1–2 h/week",
+    tools: "Porter Metrics or Two Minute Reports (connector) → Google Sheets. Optional: Gemini in Sheets, Make for a morning digest.",
+    problem: "Knowing whether each client is on track to spend the booked budget this month.",
+    today: "Export, paste, divide, forget which day of the month it is.",
+    ai: "A connector pulls daily spend by campaign into a sheet every morning. One formula computes pacing. Conditional formatting turns rows red. A Make scenario sends you a morning message listing anything off-pace.",
+    steps: [
+      "Install the connector add-on in Google Sheets and connect one ad account. Schedule a daily pull of date, campaign, spend.",
+      "Add columns: booked monthly budget, days elapsed, expected spend to date, actual, variance %.",
+      "Conditional formatting: variance below −15% or above +10% turns the row red.",
+      "Week 4: Make scenario, weekdays 8:30am: read the sheet → filter red rows → send a message with campaign name and variance."
+    ],
+    workflow: "Schedule (8:30am) → Google Sheets “Search rows” (variance < −15% or > 10%) → Text aggregator → Slack, Gmail or WhatsApp message."
+  },
+  {
+    id: "a10", title: "Creative briefs for designers that need no follow-up questions", type: "assist", diff: "Easy", hours: "45 min/week",
+    tools: "ChatGPT or Claude.",
+    problem: "Turning a client ask plus performance learnings into a brief a designer can execute without three rounds of questions.",
+    today: "A short message, a screenshot, “something like last time but fresher”.",
+    ai: "The Creative Brief prompt produces: objective, audience, key message, hook, visual direction, formats and sizes for every placement, text-on-image limits, CTA, do-and-don’t list, and references from your top ads.",
+    steps: [
+      "Paste the Creative Brief prompt with the client ask and the two best-performing ads from the last month.",
+      "Attach brand rules if you have them (or point to your NotebookLM client sheet).",
+      "Send the brief. Note any question the designer still asks and add it to the prompt."
+    ],
+    prompt: "p8"
+  },
+  {
+    id: "a11", title: "Proposals and media plans from your own past work", type: "assist", diff: "Medium", hours: "2–3 h per proposal",
+    tools: "Claude Project (or Custom GPT) with your best past proposals.",
+    problem: "Each new pitch starts from a copy of the last deck and a lot of find-and-replace.",
+    today: "Open the last proposal, delete half, rewrite half, lose the version you liked.",
+    ai: "A Project that holds your three best proposals, the rate card and your tone guide. Describe the new client and get a full first draft in your structure, with the budget table and the rationale written.",
+    steps: [
+      "Create a Project named “Proposals”. Upload three strong past proposals (remove confidential numbers), the rate card, and a short note on your house tone.",
+      "In Project instructions, paste: “Always follow the structure of the uploaded proposals. Ask me three questions before drafting if the brief is thin.”",
+      "Start a chat: paste the new brief and say “draft the proposal”. Iterate section by section.",
+      "Export to Docs or Slides and polish."
+    ]
+  },
+  {
+    id: "a12", title: "Lead ads → sheet → instant notification and thank-you", type: "full", diff: "Medium", hours: "1 h/week, plus faster lead response",
+    tools: "Meta Lead Ads + Zapier or Make + Google Sheets + Gmail.",
+    problem: "Leads from instant forms sit in Ads Manager until someone downloads the CSV. By then the lead is cold.",
+    today: "Weekly CSV download, forward to the client, hope they call.",
+    ai: "Every new lead lands in the client’s sheet instantly, the client (or your sales contact) gets a notification, and the lead gets a thank-you email within a minute. No AI needed; this is pure automation.",
+    steps: [
+      "In Zapier or Make, choose trigger “Facebook Lead Ads: new lead” and connect the page and form.",
+      "Action 1: Google Sheets → add row (name, email, phone, form, date). Keep personal data inside your company’s Google account only.",
+      "Action 2: Gmail → send the client a short notification (or Slack / WhatsApp via a connector).",
+      "Action 3 (optional): Gmail → auto-reply to the lead from the client’s approved template.",
+      "Test with a real form submission. Turn it on. Tell the client."
+    ],
+    workflow: "Trigger: Meta Lead Ads (new lead) → Google Sheets (add row) → Gmail (notify client) → Gmail (thank-you to lead)."
+  },
+  {
+    id: "a13", title: "Ad rejections and policy fixes in five minutes", type: "assist", diff: "Easy", hours: "30 min/week",
+    tools: "ChatGPT or Claude.",
+    problem: "An ad gets rejected with a vague policy reason and the campaign is stuck.",
+    today: "Google the policy, guess what tripped it, resubmit, get rejected again.",
+    ai: "Paste the rejection reason and the ad text. Get a plain-English explanation of the likely trigger, a rewritten compliant version, and a short appeal message if you think the rejection was wrong.",
+    steps: [
+      "Paste the Policy Fixer prompt with the rejection text and the full ad copy (plus a description of the image).",
+      "Use the rewritten version, or the appeal text, depending on what it found.",
+      "Add the lesson to a “policy gotchas” note per client."
+    ],
+    prompt: "p9"
+  },
+  {
+    id: "a14", title: "Month-end budget reconciliation summary", type: "semi", diff: "Medium", hours: "1–2 h/month",
+    tools: "Ads Manager export (or your connector sheet) + Gemini or ChatGPT.",
+    problem: "Matching actual spend against booked budgets per client and explaining the gaps to finance or account management.",
+    today: "Side-by-side spreadsheets, manual subtraction, a long email nobody reads.",
+    ai: "Upload the spend-by-account export and the booked-budget sheet. The assistant produces a variance table, flags anything over 5%, and drafts the finance email in your format.",
+    steps: [
+      "Export monthly spend by ad account. Keep a simple booked-budget sheet (client, month, budget, PO reference).",
+      "Upload both and paste the Reconciliation prompt.",
+      "Check the three largest variances by hand. Send."
+    ],
+    prompt: "p10"
+  },
+  {
+    id: "a15", title: "Brain dump → today’s plan (the ADHD one)", type: "assist", diff: "Easy", hours: "30 min/day of decision fatigue",
+    tools: "ChatGPT voice mode (or any assistant), Goblin.tools Magic ToDo.",
+    problem: "Mornings where everything feels urgent, nothing gets started, and the day is half gone by the time a plan exists.",
+    today: "Rewrite the to-do list, reorder it, open Ads Manager, get pulled into something, forget the list.",
+    ai: "Talk for two minutes: every task, worry and deadline, unfiltered. The Day Planner prompt returns three must-dos, a parking lot for everything else, time estimates, and the tiny first step of must-do number one. Then start that step.",
+    steps: [
+      "Open ChatGPT, tap the voice icon, paste the Day Planner prompt first (or say it), then talk. No editing.",
+      "Read only the three must-dos. Do the first tiny step immediately, before anything else.",
+      "If a must-do still feels too big, paste it into Goblin.tools Magic ToDo and do step one."
+    ],
+    prompt: "p11"
+  }
+];
+</script>
+<script>
+const PROMPTS = [
+  { id: "p1", name: "Report Narrator", use: "Weekly or monthly performance reports", text:
+`You are a senior Meta Ads analyst writing a weekly performance update for an account manager at an international media representation company. Audience: busy, commercially minded, not technical.
+
+Context: Client is [CLIENT or “Client A”], objective is [awareness / traffic / leads / sales], target CPA or CPM is [NUMBER], monthly budget is [NUMBER]. This week’s anything-unusual note: [e.g. creative refresh launched Wednesday].
+
+I am attaching the campaign-level export for the last 7 days (and the previous 7 days if available).
+
+Task: write the update.
+
+Format:
+1. Headline (one sentence: what happened and whether we are on track).
+2. Key numbers: spend, results, cost per result, CTR, with week-on-week change. Use the exact figures from the file; do not round beyond one decimal.
+3. What worked (max 3 bullets, name the campaign or ad set).
+4. What did not (max 3 bullets, with one hypothesis each).
+5. Next week’s plan (3 actions).
+6. One question for the client, if any.
+Tone: plain, confident, no hype words. Under 220 words. If any number looks inconsistent in the data, flag it instead of guessing.` },
+
+  { id: "p2", name: "Ad Copy Generator", use: "Primary text, headlines and descriptions in multiple angles", text:
+`You are a direct-response copywriter for Meta (Facebook and Instagram) ads.
+
+Client: [CLIENT]. Product or offer: [WHAT WE ARE PROMOTING]. Audience: [WHO, including country and language]. Campaign objective: [OBJECTIVE]. Key proof points: [2–3 FACTS]. Never say: [CLAIMS OR WORDS THE CLIENT FORBIDS]. Tone: [e.g. warm and premium / direct and value-led].
+
+Task: write 10 ad variations. Use these angles, one each: benefit-led, problem-first, social proof, curiosity question, urgency or scarcity (only if true), objection handling, how-it-works, comparison, testimonial style, and a short punchy one.
+
+Format for each:
+- Angle:
+- Primary text (aim for the first 125 characters to carry the hook, since the rest can be truncated; total under 300 characters)
+- Headline (under 40 characters)
+- Description (under 30 characters)
+- Who this is for (one line)
+
+Then: recommend the 3 to test first and say why in one sentence each. No emojis unless I ask. No exclamation marks.` },
+
+  { id: "p3", name: "Brief-to-Plan", use: "Turn a messy client brief into a campaign structure", text:
+`You are a Meta Ads strategist. I will paste a raw client brief (an email, chat, or notes). It may be incomplete.
+
+Task: turn it into a one-page campaign plan and list what is missing.
+
+Format:
+A. What the client wants (two sentences, in plain words).
+B. Recommended objective and campaign type (say whether Advantage+ or manual, and why).
+C. Audience hypotheses (3), each with a targeting approach.
+D. Budget split by audience or campaign, as a table, using the stated budget. If no budget is stated, use placeholder “[BUDGET]”.
+E. Placements and formats.
+F. KPIs and realistic targets for this category (mark targets as estimates).
+G. Creative needs: list of assets, sizes, copy pieces.
+H. Timeline with a kick-off date and first optimisation review.
+I. Open questions for the client (numbered, phrased so I can paste them into an email).
+
+Keep it under 350 words. Do not invent facts about the client; put anything you assumed in a final “Assumptions” line.
+
+Brief:
+[PASTE BRIEF]` },
+
+  { id: "p4", name: "Email Reply, three ways", use: "Client and agency emails", text:
+`You are helping me, a digital marketing executive at a media representation company, reply to an email.
+
+Here is the email I received:
+[PASTE EMAIL]
+
+What I want to happen: [ONE BLUNT SENTENCE, e.g. “I need them to approve the revised budget by Thursday” or “explain the delay without blaming the client”].
+
+Write three replies: (1) warm and friendly, (2) neutral and efficient, (3) polite but firm. Each under 120 words, with a clear next step and date. Match the formality of the original. No “I hope this email finds you well”. Subject line only if a new thread is needed.` },
+
+  { id: "p5", name: "Actions Extractor", use: "Meeting summaries and transcripts", text:
+`Here is a summary or transcript of a meeting I attended:
+[PASTE]
+
+Task: extract everything that requires action.
+
+Format:
+1. Decisions made (bullets).
+2. Action items as a table: Action | Owner | Due date (use “TBC” if not stated) | Blocking? (yes/no).
+3. Things I personally promised, as a checklist.
+4. Open questions nobody answered.
+5. A follow-up email I can send to attendees (under 120 words) confirming the actions.
+Do not add actions that were not discussed. If owners are unclear, say so.` },
+
+  { id: "p6", name: "Client Onboarding interview (for NotebookLM)", use: "Ask these inside a notebook that holds the client’s materials", text:
+`Based only on the sources in this notebook, answer each question and cite where it comes from:
+1. What does this client sell, to whom, and what is their main business goal this year?
+2. List their audience segments with any demographics, geography or language mentioned.
+3. What tone of voice rules, banned words, or compliance constraints are stated?
+4. What have they tried before on paid social and what worked or failed?
+5. What success metrics do they mention, and what numbers are attached to them?
+6. What is missing from these sources that I would need before launching a Meta campaign?
+Give the answers as a one-page client sheet I can keep next to Ads Manager.` },
+
+  { id: "p7", name: "Pattern Finder (competitor ads)", use: "Ten competitor ads from the Meta Ad Library", text:
+`You are a paid social strategist. Below are 10 active ads from competitors of my client [CLIENT, CATEGORY, MARKET]. For each I include the primary text, headline and a one-line description of the visual.
+
+Task: find patterns, then give ideas.
+
+Format:
+1. Hooks they use (group similar ones, give counts).
+2. Offers and CTAs.
+3. Formats and visual styles.
+4. Claims everyone makes (table stakes).
+5. Gaps: angles, audiences or formats nobody is using.
+6. Five ad concepts for my client that exploit those gaps, each with a hook line and a visual idea.
+Be specific. Quote short phrases from the ads where useful.
+
+Ads:
+[PASTE]` },
+
+  { id: "p8", name: "Creative Brief for a designer", use: "Turn a client ask plus winning ads into an executable brief", text:
+`You are a creative director writing a brief for a designer who will produce Meta ad creatives.
+
+Client ask: [PASTE]
+Our two best-performing ads last month (copy and a description of the visual): [PASTE]
+Brand rules or constraints: [PASTE or “see attached”]
+Placements needed: [Feed, Stories, Reels, right column, Audience Network]
+
+Write the brief with: objective; audience in one line; the single key message; hook; visual direction (3 bullets); formats and exact sizes for each placement; text-on-image guidance; CTA; a do-and-don’t list (5 each); references to the winning ads and why they worked; deadline and file-naming convention [CONVENTION]. Keep it to one page. The designer should have no questions after reading it.` },
+
+  { id: "p9", name: "Policy Fixer", use: "Rejected ads", text:
+`My Meta ad was rejected. Rejection reason shown in Ads Manager: [PASTE]. Ad primary text: [PASTE]. Headline: [PASTE]. Image or video description: [DESCRIBE]. Landing page: [URL or description]. Category: [e.g. finance, health, employment, housing, alcohol, none].
+
+Task:
+1. Explain in plain English which policy most likely triggered this and why (name the policy area).
+2. Rewrite the ad so it is compliant, keeping the message and tone.
+3. List anything on the landing page or image that may also need to change.
+4. If you think the rejection may be a mistake, draft a short appeal message (under 80 words).
+Say clearly if you are unsure; I will check Meta’s Advertising Standards for the final word.` },
+
+  { id: "p10", name: "Budget Reconciliation", use: "Month-end spend versus booked budget", text:
+`I am attaching two tables: (1) actual spend by ad account for [MONTH], exported from Meta Ads Manager; (2) booked budgets by client for the same month, with PO references.
+
+Task:
+1. Match accounts to clients (ask me if a name does not match).
+2. Produce a variance table: Client | Booked | Actual | Variance (₹ and %) | Note.
+3. Flag any variance above 5% and suggest the most likely reason (pacing, paused campaign, late start, currency).
+4. Draft an email to finance (under 150 words) summarising the month and listing the flagged items.
+Use the figures exactly as given; do not estimate missing values, mark them “missing”.` },
+
+  { id: "p11", name: "Day Planner (brain dump)", use: "Mornings. Use voice mode and just talk.", text:
+`I have ADHD and I am going to dump everything on my mind for today, unfiltered. Do not comment on it until I finish.
+
+When I say “done”, give me:
+1. The three things that must happen today, in order, with a time estimate for each.
+2. Everything else in a “parking lot” list (no judgement, no advice).
+3. The first tiny step of must-do number one, something that takes under five minutes.
+4. One sentence of encouragement without exclamation marks.
+Keep the whole answer under 150 words. If I listed deadlines, use them to decide the order.
+
+Here is my dump:` }
+];
+
+const ASSESS = [
+  { id: "q1", q: "How often do you already use ChatGPT, Claude or Gemini for work?", opts: ["Never or rarely", "A few times a week", "Daily"], score: [0, 1, 2] },
+  { id: "q2", q: "Where do most of your hours go? (pick up to three)", multi: true, opts: ["Reports and data", "Ad copy and creatives", "Emails and client comms", "Campaign set-up and monitoring", "Research and proposals", "Meetings and follow-ups"] },
+  { id: "q3", q: "Spreadsheets: how do you feel?", opts: ["I avoid them", "Basic formulas are fine", "Pivots and lookups, no problem"], score: [0, 1, 2] },
+  { id: "q4", q: "Ever built an automation (Zapier, Make, IFTTT, Apps Script)?", opts: ["No", "Tried once", "Yes, I have some running"], score: [0, 1, 2] },
+  { id: "q5", q: "You have an MCA. How much do you want to use code in this?", opts: ["Keep it no-code", "A little is fine", "Happy to code"], score: [0, 1, 2] },
+  { id: "q6", q: "What does your company mostly run on?", opts: ["Google Workspace", "Microsoft 365", "A mix of both"] },
+  { id: "q7", q: "Your biggest ADHD friction at work?", opts: ["Starting tasks", "Finishing and following up", "Switching between tabs and tools", "Remembering details", "Boring repetitive work"] },
+  { id: "q8", q: "Meetings or client calls in a typical week?", opts: ["0–2", "3–6", "7 or more"] }
+];
+
+const QUIZZES = {
+  1: [
+    { q: "A prompt is getting vague answers. What is the most useful thing to add first?", opts: ["More exclamation marks", "Role, real context, one clear task, and a format", "A request to “be smarter”", "A longer word count"], a: 1, why: "Role + context + task + format is the whole recipe. Pasting real material (the brief, the export) does more than any clever wording." },
+    { q: "The Report Narrator gives you a tidy update with a CPA of ₹212. What do you do before sending?", opts: ["Send it, the AI read the file", "Check three figures against the sheet", "Round it to ₹200 to be safe", "Ask the AI if it is sure"], a: 1, why: "AI reads files well but makes confident arithmetic mistakes. Three spot-checks catch most of them and take a minute." },
+    { q: "Which of these is fine to paste into a consumer AI tool?", opts: ["The client’s lead export with phone numbers", "An ad account access token", "Last week’s campaign-level performance CSV with the client anonymised", "Your Business Manager login"], a: 2, why: "Performance numbers with an anonymised client name are low-risk. Personal data and credentials never go in." }
+  ],
+  2: [
+    { q: "Why use NotebookLM instead of ChatGPT for client research?", opts: ["It is faster", "It answers only from the sources you uploaded and cites them", "It makes slides", "It has no limits"], a: 1, why: "Source-grounded answers mean it cannot invent a client fact. It also shows you where each answer came from." },
+    { q: "Fathom has summarised a client call. What turns that into done work?", opts: ["Reading it twice", "Running it through the Actions Extractor and sending the follow-up within ten minutes", "Saving it to a folder", "Forwarding the transcript to everyone"], a: 1, why: "The value is in the actions and the fast follow-up, not the transcript." },
+    { q: "You want next Monday’s report to take two clicks. What do you set up?", opts: ["A longer prompt", "A Claude Project or Custom GPT with your template and the Report Narrator instructions", "A new spreadsheet", "A calendar reminder"], a: 1, why: "A saved assistant removes the set-up friction. That is what makes the habit survive busy weeks." }
+  ],
+  3: [
+    { q: "In Make, what is a trigger?", opts: ["The thing that starts a scenario, like a new row or a schedule", "A paid feature", "A chart", "A type of email"], a: 0, why: "Every automation is trigger → actions. New lead, new email, new row, or “every Monday 9am” are all triggers." },
+    { q: "First automated rule for a client account should be:", opts: ["Auto-pause anything with a high CPA on day one", "Notify me when spend passes 110% of budget", "Double the budget of winners automatically", "No rules, check manually"], a: 1, why: "Start with notifications. After two weeks of trusting them, let rules take gentle actions." },
+    { q: "A lead-ads automation stores lead names and phone numbers. Where should the sheet live?", opts: ["Your personal Gmail", "A public link", "Your company’s Google account with access limited to the client team", "A screenshot in WhatsApp"], a: 2, why: "Personal data stays inside company-controlled accounts with limited sharing. The automation is only as safe as the destination." }
+  ],
+  4: [
+    { q: "An agent drafts the Monday report automatically. What must stay in the flow?", opts: ["Nothing, that is the point", "A human approval step before anything reaches a client", "A second agent to check the first", "A longer prompt"], a: 1, why: "Agents fail quietly. Approval before send is non-negotiable for client-facing output." },
+    { q: "Meta may add an AI info label to ads that were:", opts: ["Any ad with a photo", "Made or materially edited with Meta’s generative AI features", "Ads over ₹10,000", "Video ads only"], a: 1, why: "Tell clients before you switch on generative enhancements so the label is not a surprise." },
+    { q: "Best next step after Day 30 for someone with a CS background?", opts: ["Buy every AI tool", "Pick one stretch: self-hosted n8n or the Meta ads MCP connection, for a single workflow you already run", "Stop using AI", "Rebuild everything from scratch"], a: 1, why: "One stretch, one workflow, one month. Depth beats breadth." }
+  ]
+};
+</script>
+<script>
+const WEEKS = {
+  1: { title: "Week 1: foundations and quick wins", blurb: "Set up, learn one prompting recipe, and get four real pieces of work done faster by Friday." },
+  2: { title: "Week 2: practical applications", blurb: "Documents, spreadsheets, meetings and research. Plus your first saved assistant." },
+  3: { title: "Week 3: workflow automation", blurb: "Make (or Zapier), Meta’s own rules, and numbers that pull themselves." },
+  4: { title: "Week 4: advanced productivity", blurb: "Your personal assistant, a careful first agent, and a weekly routine that survives busy weeks." }
+};
+
+const DAYS = [
+  { n: 1, w: 1, mins: 15, title: "Set up your AI desk", tool: "ChatGPT and Claude",
+    steps: ["Create (or log into) chatgpt.com and claude.ai. Pin both tabs.", "ChatGPT: Settings → Data controls → turn off “Improve the model”. Claude: Settings → Privacy → review the training setting.", "Ask either one: “Explain the job of a Meta Ads executive at a media representation company in 5 bullets.” Notice what it gets wrong. That gap is what context fixes."],
+    links: [["Open ChatGPT", "https://chatgpt.com"], ["Open Claude", "https://claude.ai"]], reflect: "What did it get wrong about your job?" },
+  { n: 2, w: 1, mins: 15, title: "The four-part prompt", tool: "ChatGPT or Claude",
+    steps: ["Read the four-part recipe at the top of the Prompt library (role, context, task, format).", "Type “write ad copy for my client” and look at the result.", "Now rewrite it with all four parts for a real client: who the AI is, the client and audience, the exact task, the format. Compare the two outputs."],
+    reflect: "Which part made the biggest difference?" },
+  { n: 3, w: 1, mins: 20, title: "Ad copy quick win", tool: "ChatGPT or Claude", prompt: "p2", auto: "a2",
+    steps: ["Pick a live or upcoming campaign.", "Run the Ad Copy Generator prompt with real details.", "Ask the follow-up: “Which three would you test first and why?”", "Pick two and put them into an ad (or a draft). Tick “Tried it” on the automation card."] },
+  { n: 4, w: 1, mins: 15, title: "Email in half the time", tool: "ChatGPT or Claude", prompt: "p4", auto: "a4",
+    steps: ["Find three emails waiting for a reply.", "Run each through Email Reply, three ways. Pick a version, change only specifics, send.", "Notice how long the third one took."],
+    reflect: "Minutes per email before vs after?" },
+  { n: 5, w: 1, mins: 25, title: "Your first report narrative", tool: "Ads Manager, then ChatGPT or Claude", prompt: "p1", auto: "a1",
+    steps: ["Ads Manager → last 7 days, campaign level → export CSV.", "Run the Report Narrator with the CSV attached.", "Check three numbers against the file. Fix anything wrong.", "Paste into your real template and use it this week."] },
+  { n: 6, w: 1, mins: 15, title: "Brain dump to plan", tool: "ChatGPT voice mode, then Goblin.tools", prompt: "p11", auto: "a15",
+    steps: ["Paste the Day Planner prompt, switch to voice, and talk for two minutes without editing.", "Do the tiny first step it gives you immediately.", "Take the one task you have been avoiding and paste it into Goblin.tools Magic ToDo. Do step one."],
+    links: [["Goblin.tools", "https://goblin.tools"]] },
+  { n: 7, w: 1, mins: 10, title: "Rest and review", tool: "This page", quiz: 1,
+    steps: ["Take the three-question quiz below.", "Log one win in the Tracker.", "Pick your favourite prompt from this week. You will save it as an assistant tomorrow."] },
+
+  { n: 8, w: 2, mins: 20, title: "Save your best prompt as an assistant", tool: "Claude Projects, a Custom GPT, or a Gemini Gem", auto: "a1",
+    steps: ["Create a Project (Claude), a GPT (ChatGPT Plus) or a Gem (Gemini) called “Report Narrator”.", "Paste the Report Narrator prompt as the instructions. Upload your report template as a file.", "Start a new chat inside it with just the CSV. It should produce the update without any further instructions."],
+    links: [["Claude", "https://claude.ai"], ["Gemini Gems", "https://gemini.google.com/gems"]] },
+  { n: 9, w: 2, mins: 20, title: "Spreadsheets talk back", tool: "Gemini (gemini.google.com) or ChatGPT", auto: "a14",
+    steps: ["Upload last week’s campaign export.", "Ask: “Top 5 and bottom 5 ad sets by cost per result, with one line on what the top 5 have in common.”", "Ask: “Add a column flagging anything spending over 110% of its daily budget and show me the formula.”", "If your company has Gemini in Sheets, try the same question in the side panel."],
+    links: [["Gemini", "https://gemini.google.com"]] },
+  { n: 10, w: 2, mins: 20, title: "Meeting notes autopilot", tool: "Fathom (or Granola)", prompt: "p5", auto: "a5",
+    steps: ["Install Fathom (bot joins calls) or Granola (no bot). Check the privacy page; tell attendees you record.", "Record one call, internal if you prefer.", "Paste the summary into the Actions Extractor. Copy the action table into your task list and send the follow-up."],
+    links: [["Fathom", "https://fathom.video"], ["Granola", "https://granola.ai"]] },
+  { n: 11, w: 2, mins: 20, title: "Research in ten minutes", tool: "NotebookLM, then Perplexity", prompt: "p6", auto: "a6",
+    steps: ["Create a notebook for one client. Add their site, deck and brief.", "Ask the Client Onboarding questions. Save the answers as a one-page client sheet.", "In Perplexity, ask for one category benchmark with sources. Open the source before you trust it."],
+    links: [["NotebookLM", "https://notebooklm.google.com"], ["Perplexity", "https://www.perplexity.ai"]] },
+  { n: 12, w: 2, mins: 20, title: "Competitor swipe file", tool: "Meta Ad Library, then ChatGPT or Claude", prompt: "p7", auto: "a7",
+    steps: ["Search a competitor in the Ad Library. Copy ten ads’ text and describe each visual in a line.", "Run the Pattern Finder.", "Start a Swipe File sheet for that client and paste the five concepts in."],
+    links: [["Meta Ad Library", "https://www.facebook.com/ads/library"]] },
+  { n: 13, w: 2, mins: 20, title: "Brief to plan", tool: "ChatGPT or Claude", prompt: "p3", auto: "a3",
+    steps: ["Take a real brief, however messy.", "Run Brief-to-Plan.", "Send the open questions to the client or account manager today. Use the plan as your set-up checklist."] },
+  { n: 14, w: 2, mins: 10, title: "Rest and review", tool: "This page", quiz: 2,
+    steps: ["Quiz below.", "Add three repetitive tasks you noticed this week to the Tracker, with honest minutes.", "Halfway. That is a milestone."] },
+
+  { n: 15, w: 3, mins: 20, title: "Meet Make (or Zapier)", tool: "make.com",
+    steps: ["Create a free Make account (or Zapier if you want the simplest possible start).", "Learn three words: scenario (the whole flow), trigger (what starts it), module (each step).", "Open the template gallery and search “Google Sheets Gmail”. Just look. No building yet."],
+    links: [["Make", "https://www.make.com"], ["Make Academy", "https://academy.make.com"], ["Zapier", "https://zapier.com"]] },
+  { n: 16, w: 3, mins: 25, title: "Your first automation", tool: "Make or Zapier",
+    steps: ["Build: trigger “every Monday 8:30am” → action “send me an email: Export last week’s report and run the Narrator”. Yes, a reminder is an automation.", "Then a real one: Gmail label “Report request” → add a row to a Requests sheet with sender, subject, date.", "Run it once manually, check the row appeared, turn it on."],
+    reflect: "What was confusing? Write it here so Day 18 is easier." },
+  { n: 17, w: 3, mins: 20, title: "Meta rules that watch your accounts", tool: "Ads Manager → Rules", auto: "a8",
+    steps: ["Create rule 1: spend over 110% of daily budget → notify me.", "Create rule 2: cost per result over 1.5× target for 3 days → notify me.", "Create rule 3: impressions below a floor for 2 days → notify me. Apply to one client first."] },
+  { n: 18, w: 3, mins: 25, title: "Numbers that pull themselves", tool: "Google Sheets + a connector (Porter Metrics free tier)", auto: "a9",
+    steps: ["Install the connector in Sheets, connect one ad account, schedule a daily pull of date, campaign, spend, results.", "Add a pacing column: expected spend to date vs actual.", "Add conditional formatting so off-pace rows turn red. Bookmark the sheet."],
+    links: [["Porter Metrics", "https://portermetrics.com"], ["Looker Studio", "https://lookerstudio.google.com"]] },
+  { n: 19, w: 3, mins: 25, title: "Lead ads flow (or a digest if you run no lead campaigns)", tool: "Make or Zapier", auto: "a12",
+    steps: ["If you run lead campaigns: trigger “Facebook Lead Ads: new lead” → Google Sheets add row → Gmail notify client. Test with one real submission.", "If you do not: build a Friday 5pm scenario that reads your pacing sheet and emails you a three-line summary.", "Tell whoever receives the output that it exists."] },
+  { n: 20, w: 3, mins: 20, title: "Meeting to tasks pipeline", tool: "Zapier or Make, with Fathom", auto: "a5",
+    steps: ["Trigger: new Fathom meeting summary (or new Granola note via email). Action: create a Google Task or Sheet row per action item.", "If the connector is not available on your plan, use the manual version: summary → Actions Extractor → tasks. Still ten minutes.", "Run it after your next call."] },
+  { n: 21, w: 3, mins: 10, title: "Rest and review", tool: "This page", quiz: 3,
+    steps: ["Quiz below.", "Open the Tracker and look at the hours-per-week number. Update minutes with real measurements.", "Mark anything that is now running as “Live”."] },
+
+  { n: 22, w: 4, mins: 25, title: "Build your personal assistant", tool: "Claude Project, Custom GPT or Gemini Gem", auto: "a11",
+    steps: ["Create “Swarnima’s Ads Assistant”. Instructions: your role, the kinds of clients you handle (anonymised), your report format, Meta character limits, your tone, and “ask me three questions before drafting if the brief is thin”.", "Upload: report template, copy bank, one past proposal with numbers removed.", "Test with the Monday report and an ad copy request. Fix the instructions where it drifted."] },
+  { n: 23, w: 4, mins: 20, title: "Agents, carefully", tool: "Zapier Agents or Make AI Agents",
+    steps: ["Create an agent: “Every Monday 9am, open [report sheet], summarise changes versus last week in five bullets, create a Google Doc, email me the link.”", "Run it once manually. Read the doc critically.", "Rule: the agent never emails a client. It emails you. You forward."],
+    links: [["Zapier Agents", "https://zapier.com/agents"], ["Make AI Agents", "https://www.make.com/en/ai-agents"]] },
+  { n: 24, w: 4, mins: 20, title: "AI inside Ads Manager", tool: "Ads Manager → Advantage+ creative", auto: "a2",
+    steps: ["On one ad, switch on text variations and image expansion. Review what it generated.", "Try image-to-video on one static asset if it is offered to your account.", "Check whether the ad shows an AI info label in preview. Decide with the client whether that is acceptable."] },
+  { n: 25, w: 4, mins: 25, title: "One end-to-end workflow", tool: "Make + Sheets + your assistant",
+    steps: ["Chain it: connector fills the sheet (Day 18) → Monday agent or scenario drafts the summary (Day 23) → draft lands in your inbox → you approve and paste into your report.", "Run the whole thing for one client this Monday.", "Write down the three places it could break and what you would do."],
+    reflect: "Where could it break?" },
+  { n: 26, w: 4, mins: 15, title: "Safety and hygiene", tool: "This page (the Start section)",
+    steps: ["Reread “Before you paste anything” on the Start page.", "List every automation you have running, where its data goes, and who can see it. Keep it in the Tracker notes.", "If anything touches client personal data, confirm it lives in a company-controlled account."] },
+  { n: 27, w: 4, mins: 20, title: "Teach it to one colleague", tool: "A colleague and 20 minutes",
+    steps: ["Show one person one automation or prompt (Report Narrator is the crowd-pleaser).", "Explaining it is the best way to make it stick in your own head.", "Ask them which task of theirs they would automate first. Add it to your Tracker as an idea."] },
+  { n: 28, w: 4, mins: 10, title: "Rest and review", tool: "This page", quiz: 4,
+    steps: ["Final quiz.", "Log the biggest win of the month.", "Tomorrow you write the routine."] },
+  { n: 29, w: 4, mins: 25, title: "Write your weekly AI routine", tool: "A note you will actually see",
+    steps: ["Monday: alerts and pacing sheet already waiting; run the Narrator; send by 10am.", "Daily: two-minute brain dump before opening Ads Manager.", "Wednesday: ad copy or creative brief for whatever launches next.", "Friday: ten minutes in the Tracker, log wins, mark anything new as Live.", "Put these four as recurring calendar blocks. Keep them short."],
+    reflect: "Paste your routine here." },
+  { n: 30, w: 4, mins: 15, title: "Celebrate, then pick one stretch", tool: "The Tracker",
+    steps: ["Read your Wins log from the top. All of it.", "Look at the reclaimed-hours number. Tell your manager that number.", "Pick one stretch for the next month: self-hosted n8n for one workflow, Meta’s ads MCP connection with Claude (experimental), or a Looker Studio dashboard per client. One only."] }
+];
+</script>
+<script>
+/* ---------- state ---------- */
+const KEY = "swarnima-playbook-v1";
+const DEFAULT = { days: {}, autos: {}, quiz: {}, assess: { answers: {}, result: null }, tracker: [], wins: [], notes: {}, theme: "" };
+let S = load();
+function load() {
+  try { const r = localStorage.getItem(KEY); return r ? Object.assign({}, DEFAULT, JSON.parse(r)) : Object.assign({}, DEFAULT); }
+  catch (e) { return Object.assign({}, DEFAULT); }
+}
+function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) { /* storage unavailable: page still works for this session */ } }
+
+/* ---------- helpers ---------- */
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const promptById = id => PROMPTS.find(p => p.id === id);
+let toastTimer;
+function toast(msg) {
+  const t = $("#toast"); t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 1800);
+}
+function copyText(text) {
+  const done = () => toast("Copied");
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done).catch(() => fallback()); }
+  else fallback();
+  function fallback() {
+    const ta = document.createElement("textarea"); ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); done(); } catch (e) { toast("Select and copy manually"); }
+    document.body.removeChild(ta);
+  }
+}
+function promptBlock(p, title) {
+  return `<div class="prompt" data-pid="${p.id}">
+    <div class="ttl">${esc(title || p.name)}</div>
+    <button class="btn sm copy" type="button" data-copy="${p.id}">Copy prompt</button>
+    <pre>${esc(p.text)}</pre>
+  </div>`;
+}
+function diffDots(n) { return `<span class="diff" title="Difficulty ${n} of 3">${"●".repeat(n)}${"○".repeat(3 - n)}</span>`; }
+
+/* ---------- nav + router ---------- */
+const NAV = [
+  { id: "start", label: "Start", ico: "🏁", bg: "var(--marigold-soft)" },
+  { id: "check", label: "Check", ico: "🧭", bg: "var(--indigo-soft)" },
+  { id: "tools", label: "Tools", ico: "🧰", bg: "var(--sky-soft)" },
+  { id: "automate", label: "Automate", ico: "⚡", bg: "var(--coral-soft)" },
+  { id: "days", label: "30 days", ico: "📅", bg: "var(--mint-soft)" },
+  { id: "prompts", label: "Prompts", ico: "✍️", bg: "var(--lilac-soft)" },
+  { id: "tracker", label: "Tracker", ico: "📈", bg: "var(--indigo-soft)" }
+];
+function counts() {
+  const d = Object.values(S.days).filter(Boolean).length;
+  const a = Object.values(S.autos).filter(Boolean).length;
+  const q = Object.keys(S.quiz).filter(w => S.quiz[w] && Object.keys(S.quiz[w]).length === 3).length;
+  return { d, a, q };
+}
+function renderNav() {
+  const c = counts();
+  const cnt = { days: `${c.d}/30`, automate: `${c.a}/15` };
+  $("#nav").innerHTML = NAV.map(n => `<li><a href="#${n.id}" data-view="${n.id}"><span class="ico" style="background:${n.bg}">${n.ico}</span>${n.label}${cnt[n.id] ? `<span class="cnt">${cnt[n.id]}</span>` : ""}</a></li>`).join("");
+  $("#tabbar").innerHTML = NAV.map(n => `<a href="#${n.id}" data-view="${n.id}"><span class="ico">${n.ico}</span>${n.label}</a>`).join("");
+  markCurrent();
+}
+function currentView() {
+  const h = (location.hash || "#start").replace("#", "");
+  return NAV.some(n => n.id === h) ? h : "start";
+}
+function markCurrent() {
+  const v = currentView();
+  $$("[data-view]").forEach(a => { if (a.dataset.view === v) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+}
+function route() {
+  const v = currentView();
+  $$(".view").forEach(s => s.classList.toggle("active", s.id === "view-" + v));
+  $("#topTitle").textContent = $("#view-" + v).dataset.title;
+  markCurrent();
+  window.scrollTo({ top: 0 });
+  if (v === "start") renderStart();
+}
+window.addEventListener("hashchange", route);
+
+/* ---------- theme ---------- */
+function applyTheme() {
+  const root = document.documentElement;
+  if (S.theme) root.setAttribute("data-theme", S.theme); else root.removeAttribute("data-theme");
+  const dark = S.theme === "dark" || (!S.theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  $("#themeBtn").textContent = dark ? "Switch to light mode" : "Switch to dark mode";
+}
+function toggleTheme() {
+  const dark = S.theme === "dark" || (!S.theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  S.theme = dark ? "light" : "dark"; save(); applyTheme();
+}
+
+/* ---------- start ---------- */
+function nextDay() { return DAYS.find(d => !S.days[d.n]); }
+function renderStart() {
+  const c = counts();
+  const box = $("#missionBox");
+  const nd = nextDay();
+  if (!S.assess.result) {
+    box.innerHTML = `<div class="mission"><div class="eyebrow">Today’s mission</div><h2>Take the two-minute skills check</h2><p>Eight taps. It picks your starting level, your first three automations, and trims the tool list so you never face twenty options at once.</p><div class="btn-row"><a class="btn" href="#check">Start the check</a></div></div>`;
+  } else if (nd) {
+    box.innerHTML = `<div class="mission"><div class="eyebrow">Today’s mission <span class="mins">${nd.mins} min</span></div><h2>Day ${nd.n}: ${esc(nd.title)}</h2><p>Open only: ${esc(nd.tool)}. ${esc(nd.steps[0])}</p><div class="btn-row"><a class="btn" href="#days" data-goto-day="${nd.n}">Open Day ${nd.n}</a></div></div>`;
+  } else {
+    box.innerHTML = `<div class="mission"><div class="eyebrow">Programme complete</div><h2>Thirty days done. Pick one stretch.</h2><p>Self-hosted n8n for one workflow, the Meta ads MCP connection, or a Looker Studio dashboard per client. One only, for one month.</p><div class="btn-row"><a class="btn" href="#tracker">Review your tracker</a></div></div>`;
+  }
+  const ring = (val, max, color, label) => {
+    const r = 24, circ = 2 * Math.PI * r, off = circ * (1 - Math.min(val / max, 1));
+    return `<div class="ring"><svg viewBox="0 0 56 56" aria-hidden="true"><circle class="track" cx="28" cy="28" r="${r}"></circle><circle class="bar" cx="28" cy="28" r="${r}" stroke="${color}" stroke-dasharray="${circ.toFixed(1)}" stroke-dashoffset="${off.toFixed(1)}"></circle></svg><div class="lbl"><strong>${val}<span style="font-size:.9rem;color:var(--ink-3)"> / ${max}</span></strong>${label}</div></div>`;
+  };
+  $("#rings").innerHTML = ring(c.d, 30, "var(--mint)", "days completed") + ring(c.a, 15, "var(--coral)", "automations tried") + ring(c.q, 4, "var(--lilac)", "quizzes done") + ring(Math.min(Math.round(trackerHours()), 10), 10, "var(--marigold)", "hours/week reclaimable (of 10)");
+  renderBadges();
+}
+const BADGES = [
+  { em: "✉️", t: "First prompt sent", ok: () => !!S.days[1] },
+  { em: "🧭", t: "Skills check done", ok: () => !!S.assess.result },
+  { em: "📄", t: "Report in 20 minutes", ok: () => !!S.autos.a1 },
+  { em: "1️⃣", t: "Week 1 complete", ok: () => [1,2,3,4,5,6,7].every(n => S.days[n]) },
+  { em: "⚡", t: "First automation live", ok: () => !!S.days[16] || !!S.autos.a8 || !!S.autos.a12 || !!S.autos.a9 || S.tracker.some(t => t.status === "live") },
+  { em: "🏔️", t: "Halfway (15 days)", ok: () => counts().d >= 15 },
+  { em: "⏱️", t: "5 hours a week back", ok: () => trackerHours() >= 5 },
+  { em: "🎓", t: "Playbook graduate", ok: () => counts().d >= 30 }
+];
+function renderBadges() {
+  $("#badges").innerHTML = BADGES.map(b => `<div class="badge ${b.ok() ? "on" : ""}"><span class="em">${b.em}</span>${b.t}</div>`).join("");
+}
+
+/* ---------- assessment ---------- */
+function renderAssess() {
+  const ans = S.assess.answers;
+  $("#assessBox").innerHTML = ASSESS.map((q, i) => `<div class="aq"><div><strong>${i + 1}. ${esc(q.q)}</strong></div><div class="opts">${q.opts.map((o, j) => {
+    const sel = q.multi ? (ans[q.id] || []).includes(j) : ans[q.id] === j;
+    return `<button class="opt" type="button" data-q="${q.id}" data-i="${j}" aria-pressed="${sel}">${esc(o)}</button>`;
+  }).join("")}</div></div>`).join("") + `<div class="btn-row"><button class="btn primary" id="assessGo" type="button">See my result</button>${S.assess.result ? `<button class="btn ghost" id="assessRedo" type="button">Clear answers</button>` : ""}</div>`;
+  renderAssessResult();
+}
+const FOCUS_MAP = {
+  "Reports and data": ["a1", "a9", "a14"],
+  "Ad copy and creatives": ["a2", "a10", "a7"],
+  "Emails and client comms": ["a4", "a13", "a3"],
+  "Campaign set-up and monitoring": ["a8", "a3", "a9"],
+  "Research and proposals": ["a6", "a11", "a7"],
+  "Meetings and follow-ups": ["a5", "a15", "a4"]
+};
+const ADHD_TIPS = {
+  "Starting tasks": "Your friction is activation. Use Day 6 (brain dump) every morning and Goblin.tools for anything that feels big. The first step on every card here is deliberately under five minutes.",
+  "Finishing and following up": "Your friction is closing loops. Prioritise the meeting-to-actions pipeline (Day 10 and Day 20) and the automated alerts (Day 17); they do the remembering.",
+  "Switching between tabs and tools": "Your friction is context switching. Every module here names one tool to open. Set up Projects or a Custom GPT early (Day 8) so context lives in one place, and let a connector bring the numbers to you (Day 18).",
+  "Remembering details": "Your friction is working memory. NotebookLM per client (Day 11), a meeting recorder (Day 10) and a saved assistant that knows your formats (Day 8) become your external memory.",
+  "Boring repetitive work": "Your friction is tedium. Go straight for the fully automated items: rules (Day 17), the pacing sheet (Day 18), lead ads flow (Day 19). Watching a task disappear is the dopamine hit that keeps this going."
+};
+function computeResult() {
+  const a = S.assess.answers;
+  const sc = ["q1", "q3", "q4", "q5"].reduce((s, id) => s + ((ASSESS.find(q => q.id === id).score || [])[a[id]] || 0), 0);
+  const level = sc <= 2 ? "Explorer" : sc <= 5 ? "Builder" : "Automator";
+  const focusLabels = (a.q2 || []).map(i => ASSESS[1].opts[i]);
+  const autos = [];
+  for (let round = 0; round < 3 && autos.length < 3; round++) {
+    focusLabels.forEach(l => { const id = (FOCUS_MAP[l] || [])[round]; if (id && !autos.includes(id) && autos.length < 3) autos.push(id); });
+  }
+  ["a1", "a2", "a4"].forEach(id => { if (autos.length < 3 && !autos.includes(id)) autos.push(id); });
+  const suite = ASSESS[5].opts[a.q6] || "A mix of both";
+  const meetings = ASSESS[7].opts[a.q8] || "0–2";
+  const code = ASSESS[4].opts[a.q5] || "Keep it no-code";
+  const friction = ASSESS[6].opts[a.q7] || "Starting tasks";
+  const stack = [];
+  stack.push("ChatGPT or Claude (free tier) for drafting and analysis. Pick one as your daily driver; use the other when the first feels off.");
+  if (suite === "Google Workspace") stack.push("Gemini, NotebookLM and a Sheets connector: you are already in Google, so the data side is easy.");
+  else if (suite === "Microsoft 365") stack.push("If your company has Microsoft 365 Copilot, use it in Outlook and Excel for the same jobs this playbook gives Gemini. Zapier and Make connect Outlook, Excel and OneDrive just as well. NotebookLM still works with uploaded files.");
+  else stack.push("Gemini and NotebookLM for research and spreadsheets; Zapier or Make bridges whatever lives in Microsoft.");
+  stack.push(meetings === "0–2" ? "Skip the meeting recorder until you have more calls; the Actions Extractor prompt on your own notes is enough." : "Fathom (or Granola) from Day 10: with " + meetings + " calls a week, the recorder pays for itself on day one.");
+  stack.push(code === "Happy to code" ? "Make in Week 3, then self-hosted n8n as your Day 30 stretch. With your MCA, n8n’s code nodes and AI-agent node will feel natural." : code === "A little is fine" ? "Make is your automation tool: visual, generous free tier, and a code module for the odd formula." : "Zapier first (simplest), Make when you want branching. No code required anywhere in this playbook.");
+  const start = level === "Automator" ? "Skim Week 1 in one sitting, do Day 5 properly, then start Week 3 on your second day." : level === "Builder" ? "Start at Day 1. You can comfortably do two days per 25-minute session in Week 1." : "Start at Day 1 and take it one day at a time. Week 1 alone will save you hours.";
+  return { level, sc, autos, stack, tip: ADHD_TIPS[friction], start, friction };
+}
+function renderAssessResult() {
+  const r = S.assess.result; const el = $("#assessResult");
+  if (!r) { el.innerHTML = ""; return; }
+  const tagColor = r.level === "Explorer" ? "marigold" : r.level === "Builder" ? "sky" : "lilac";
+  el.innerHTML = `<div class="card result">
+    <div class="row"><span class="tag ${tagColor}">Level: ${r.level}</span><span class="muted">score ${r.sc} of 8 on readiness</span></div>
+    <h3 style="margin-top:10px">Where to start</h3><p>${esc(r.start)}</p>
+    <h4 style="margin-top:14px">Your first three automations</h4>
+    <ul>${r.autos.map(id => { const a = AUTOS.find(x => x.id === id); return `<li><a href="#automate" data-goto-auto="${id}">${esc(a.title)}</a> <span class="muted">(${a.diff}, ${esc(a.hours)})</span></li>`; }).join("")}</ul>
+    <h4 style="margin-top:14px">Your tool stack</h4>
+    <ul>${r.stack.map(s => `<li>${esc(s)}</li>`).join("")}</ul>
+    <h4 style="margin-top:14px">For your brain: ${esc(r.friction)}</h4><p>${esc(r.tip)}</p>
+    <div class="btn-row"><a class="btn primary" href="#days">Go to the 30 days</a><button class="btn" type="button" id="seedTracker">Add these three to my tracker</button></div>
+  </div>`;
+}
+
+/* ---------- tools ---------- */
+let toolFilter = "all";
+function renderTools() {
+  $("#toolChips").innerHTML = [["all", "All"], ["1", "Week 1"], ["2", "Week 2"], ["3", "Week 3"], ["4", "Week 4"]].map(([v, l]) => `<button class="chip" type="button" data-tf="${v}" aria-pressed="${toolFilter === v}">${l}</button>`).join("");
+  const groups = Object.keys(GROUPS).filter(g => toolFilter === "all" || toolFilter === g);
+  $("#toolList").innerHTML = groups.map(g => `<div class="week"><div class="week-head"><span class="wk">${esc(GROUPS[g].label)}</span><span class="tag ${GROUPS[g].color}">${TOOLS.filter(t => t.group == g).length} tools</span></div>
+    ${TOOLS.filter(t => t.group == g).map(t => `<details class="mod" id="tool-${t.id}"><summary><span class="dot" style="background:var(--${GROUPS[g].color})"></span><span class="ttl">${esc(t.name)}</span><span class="meta">${esc(t.cat)} · ${diffDots(t.diff)}</span><span class="chev">▾</span></summary>
+      <div class="body tool">
+        <div class="facts">
+          <div class="fact"><b>What it does</b>${esc(t.what)}</div>
+          <div class="fact"><b>Why you should care</b>${esc(t.why)}</div>
+          <div class="fact"><b>In your work</b>${esc(t.work)}</div>
+          <div class="fact"><b>Example</b>${esc(t.example)}</div>
+          <div class="fact"><b>Learning curve</b>${diffDots(t.diff)} ${t.diff === 1 ? "Minutes. Chat and go." : t.diff === 2 ? "An afternoon to get comfortable." : "A few sessions; worth it for one workflow."}</div>
+          <div class="fact"><b>Cost</b>${esc(t.cost)}</div>
+        </div>
+        <div class="btn-row"><a class="btn sm" href="${t.link}" target="_blank" rel="noopener">Open ${esc(t.name.split(" (")[0].split(":")[0])}</a>${(t.links || []).map(l => `<a class="btn sm ghost" href="${l[1]}" target="_blank" rel="noopener">${esc(l[0])}</a>`).join("")}</div>
+      </div></details>`).join("")}</div>`).join("");
+}
+
+/* ---------- automations ---------- */
+let autoFilter = "all";
+function renderAutos() {
+  $("#autoChips").innerHTML = [["all", "All 15"], ["assist", "AI-assisted"], ["semi", "Semi-automated"], ["full", "Fully automated"], ["Easy", "Easy only"]].map(([v, l]) => `<button class="chip" type="button" data-af="${v}" aria-pressed="${autoFilter === v}">${l}</button>`).join("");
+  const list = AUTOS.filter(a => autoFilter === "all" || a.type === autoFilter || a.diff === autoFilter);
+  $("#autoList").innerHTML = list.map(a => {
+    const [tl, tc] = TYPES[a.type]; const done = !!S.autos[a.id]; const p = a.prompt ? promptById(a.prompt) : null;
+    return `<details class="mod ${done ? "done" : ""}" id="auto-${a.id}"><summary><span class="dot" style="background:var(--${tc})"></span><span class="ttl">${esc(a.title)}</span><span class="meta">${a.diff} · ${esc(a.hours)}</span><span class="chev">▾</span></summary>
+      <div class="body">
+        <div class="row"><span class="tag ${tc}">${tl}</span><span class="tag grey">Difficulty: ${a.diff}</span><span class="tag grey">Saves about ${esc(a.hours)}</span></div>
+        <p style="margin-top:12px"><strong>The problem.</strong> ${esc(a.problem)}</p>
+        <div class="ba"><div class="now"><h4>How you probably do it now</h4><p class="small">${esc(a.today)}</p></div><div class="ai"><h4>The AI-powered way</h4><p class="small">${esc(a.ai)}</p></div></div>
+        <p style="margin-top:12px"><strong>Tools:</strong> ${esc(a.tools)}</p>
+        <h4>Steps</h4><ol class="steps">${a.steps.map(s => `<li><span>${esc(s)}</span></li>`).join("")}</ol>
+        ${p ? promptBlock(p) : ""}
+        ${a.workflow ? `<div class="prompt"><div class="ttl">Workflow</div><pre>${esc(a.workflow)}</pre></div>` : ""}
+        ${a.upgrade ? `<p class="small muted"><strong>Later upgrade:</strong> ${esc(a.upgrade)}</p>` : ""}
+        <div class="btn-row"><button class="done-btn ${done ? "on" : ""}" type="button" data-tried="${a.id}">${done ? "Tried it" : "Mark as tried"}</button><button class="btn" type="button" data-track="${a.id}">Add to tracker</button>${p ? `<a class="btn ghost" href="#prompts">See prompt library</a>` : ""}</div>
+      </div></details>`;
+  }).join("");
+}
+
+/* ---------- days ---------- */
+function renderDays() {
+  const nd = nextDay();
+  $("#dayList").innerHTML = Object.keys(WEEKS).map(w => {
+    const ds = DAYS.filter(d => d.w == w); const done = ds.filter(d => S.days[d.n]).length;
+    return `<div class="week"><div class="week-head"><span class="wk">${esc(WEEKS[w].title)}</span><span class="tag ${done === 7 ? "mint" : "grey"}">${done}/7</span></div><p class="muted" style="margin:0 0 10px">${esc(WEEKS[w].blurb)}</p>
+      ${ds.map(d => {
+        const isDone = !!S.days[d.n]; const isToday = nd && nd.n === d.n; const p = d.prompt ? promptById(d.prompt) : null; const a = d.auto ? AUTOS.find(x => x.id === d.auto) : null;
+        return `<details class="mod day ${isDone ? "done" : ""} ${isToday ? "today" : ""}" id="day-${d.n}" ${isToday ? "open" : ""}><summary><span class="dnum">${d.n}</span><span class="ttl">${esc(d.title)}</span><span class="meta">${d.mins} min</span><span class="chev">▾</span></summary>
+          <div class="body">
+            <div class="row"><span class="tag marigold">Open only: ${esc(d.tool)}</span>${isToday ? `<span class="tag indigo">Today</span>` : ""}</div>
+            <ol class="steps">${d.steps.map(s => `<li><span>${esc(s)}</span></li>`).join("")}</ol>
+            ${p ? promptBlock(p) : ""}
+            ${a ? `<p class="small"><strong>Related automation:</strong> <a href="#automate" data-goto-auto="${a.id}">${esc(a.title)}</a></p>` : ""}
+            ${(d.links || []).length ? `<div class="row">${d.links.map(l => `<a class="btn sm" href="${l[1]}" target="_blank" rel="noopener">${esc(l[0])}</a>`).join("")}</div>` : ""}
+            ${d.reflect ? `<label class="small" style="display:block;margin-top:12px;font-weight:700">${esc(d.reflect)}</label><textarea class="note" data-note="day${d.n}" placeholder="One line is enough">${esc(S.notes["day" + d.n] || "")}</textarea>` : ""}
+            ${d.quiz ? renderQuiz(d.quiz) : ""}
+            <div class="btn-row"><button class="done-btn ${isDone ? "on" : ""}" type="button" data-day="${d.n}">${isDone ? "Done" : "Mark day done"}</button></div>
+          </div></details>`;
+      }).join("")}</div>`;
+  }).join("");
+}
+function renderQuiz(w) {
+  const qs = QUIZZES[w]; const st = S.quiz[w] || {};
+  const answered = Object.keys(st).length; const correct = Object.keys(st).filter(i => st[i] === qs[i].a).length;
+  return `<div class="card soft" style="margin-top:14px"><h4>Week ${w} quiz</h4>
+    ${qs.map((q, i) => { const chosen = st[i]; return `<div class="q"><div><strong>${esc(q.q)}</strong></div><div class="opts">${q.opts.map((o, j) => { let cls = "opt"; if (chosen !== undefined) { if (j === q.a) cls += " right"; else if (j === chosen) cls += " wrong"; } return `<button class="${cls}" type="button" data-quiz="${w}" data-qi="${i}" data-oi="${j}" ${chosen !== undefined ? "disabled" : ""}>${esc(o)}</button>`; }).join("")}</div>${chosen !== undefined ? `<div class="why">${esc(q.why)}</div>` : ""}</div>`; }).join("")}
+    ${answered === 3 ? `<p style="margin-top:10px"><strong>${correct} of 3.</strong> ${correct === 3 ? "Clean sweep." : "The explanations above are the lesson; that is the point of the quiz."}</p>` : ""}
+  </div>`;
+}
+
+/* ---------- prompts ---------- */
+function renderPrompts() {
+  $("#promptList").innerHTML = PROMPTS.map(p => `<div class="card" style="margin-bottom:12px"><div class="row"><h3>${esc(p.name)}</h3><span class="tag lilac">${esc(p.use)}</span></div>${promptBlock(p, "Prompt")}<div class="row"><a class="btn sm ghost" href="https://chatgpt.com" target="_blank" rel="noopener">Open ChatGPT</a><a class="btn sm ghost" href="https://claude.ai" target="_blank" rel="noopener">Open Claude</a><a class="btn sm ghost" href="https://gemini.google.com" target="_blank" rel="noopener">Open Gemini</a></div></div>`).join("");
+}
+
+/* ---------- tracker ---------- */
+const FREQ = { daily: 5, weekly: 1, monthly: 0.25 };
+function trackerHours() { return S.tracker.reduce((h, t) => h + Math.max(0, (t.now - t.ai)) * (FREQ[t.freq] || 1) / 60, 0); }
+function renderTracker() {
+  const h = trackerHours();
+  $("#stHours").textContent = h.toFixed(1);
+  $("#stLive").textContent = S.tracker.filter(t => t.status === "live").length;
+  $("#stIdeas").textContent = S.tracker.length;
+  $("#sideHours").textContent = h.toFixed(1) + " h";
+  const rows = S.tracker.map(t => `<tr><td>${esc(t.name)}</td><td>${t.freq}</td><td>${t.now} → ${t.ai} min</td><td>${(Math.max(0, t.now - t.ai) * (FREQ[t.freq] || 1) / 60).toFixed(1)} h</td><td><select data-st="${t.id}" style="font:inherit;padding:4px;border-radius:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink)"><option value="idea" ${t.status === "idea" ? "selected" : ""}>Idea</option><option value="trying" ${t.status === "trying" ? "selected" : ""}>Trying</option><option value="live" ${t.status === "live" ? "selected" : ""}>Live</option></select></td><td><button class="btn sm ghost" type="button" data-del="${t.id}" aria-label="Remove">✕</button></td></tr>`).join("");
+  $("#tTable").innerHTML = S.tracker.length ? `<thead><tr><th>Task</th><th>Frequency</th><th>Now → with AI</th><th>Saved / week</th><th>Status</th><th></th></tr></thead><tbody>${rows}</tbody>` : `<tbody><tr><td class="muted">Nothing logged yet. Add the first task you notice yourself repeating, or take the skills check and tap “Add these three to my tracker”.</td></tr></tbody>`;
+  $("#wList").innerHTML = S.wins.length ? S.wins.slice().reverse().map(w => `<li><span class="muted small">${esc(w.d)}</span> ${esc(w.t)}</li>`).join("") : `<li class="muted">No wins yet. The first one is usually “the email took two minutes”.</li>`;
+}
+function addTracker(name, freq, now, ai, status) {
+  S.tracker.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), name, freq, now: +now, ai: +ai, status }); save(); renderTracker(); renderStart();
+}
+
+/* ---------- events (delegated) ---------- */
+document.addEventListener("click", e => {
+  const t = e.target.closest("button, a"); if (!t) return;
+  if (t.dataset.copy) { const p = promptById(t.dataset.copy); if (p) copyText(p.text); return; }
+  if (t.dataset.tf) { toolFilter = t.dataset.tf; renderTools(); return; }
+  if (t.dataset.af) { autoFilter = t.dataset.af; renderAutos(); return; }
+  if (t.dataset.tried) { S.autos[t.dataset.tried] = !S.autos[t.dataset.tried]; save(); renderAutos(); renderNav(); const d = $("#auto-" + t.dataset.tried); if (d) d.open = true; toast(S.autos[t.dataset.tried] ? "Nice. One more loop closed." : "Unmarked"); return; }
+  if (t.dataset.track) { const a = AUTOS.find(x => x.id === t.dataset.track); addTracker(a.title, "weekly", 90, 25, "idea"); toast("Added to tracker"); return; }
+  if (t.dataset.day) { const n = +t.dataset.day; S.days[n] = !S.days[n]; save(); renderDays(); renderNav(); const d = $("#day-" + n); if (d) d.open = true; toast(S.days[n] ? `Day ${n} done` : "Unmarked"); return; }
+  if (t.dataset.quiz) { const w = t.dataset.quiz; S.quiz[w] = S.quiz[w] || {}; S.quiz[w][t.dataset.qi] = +t.dataset.oi; save(); renderDays(); renderNav(); const d = $("#day-" + (w * 7)); if (d) d.open = true; return; }
+  if (t.dataset.q) { const q = ASSESS.find(x => x.id === t.dataset.q); const i = +t.dataset.i; const a = S.assess.answers;
+    if (q.multi) { const cur = a[q.id] || []; a[q.id] = cur.includes(i) ? cur.filter(x => x !== i) : (cur.length < 3 ? cur.concat(i) : cur); } else a[q.id] = i;
+    save(); renderAssess(); return; }
+  if (t.id === "assessGo") { const a = S.assess.answers; const missing = ASSESS.filter(q => q.multi ? !(a[q.id] || []).length : a[q.id] === undefined);
+    if (missing.length) { toast(`${missing.length} question${missing.length > 1 ? "s" : ""} left`); return; }
+    S.assess.result = computeResult(); save(); renderAssess(); renderStart(); $("#assessResult").scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+  if (t.id === "assessRedo") { S.assess = { answers: {}, result: null }; save(); renderAssess(); renderStart(); return; }
+  if (t.id === "seedTracker") { S.assess.result.autos.forEach(id => { const a = AUTOS.find(x => x.id === id); if (!S.tracker.some(x => x.name === a.title)) addTracker(a.title, "weekly", 90, 25, "idea"); }); toast("Three ideas added"); return; }
+  if (t.dataset.gotoAuto) { setTimeout(() => { const d = $("#auto-" + t.dataset.gotoAuto); if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); } }, 60); return; }
+  if (t.dataset.gotoDay) { setTimeout(() => { const d = $("#day-" + t.dataset.gotoDay); if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); } }, 60); return; }
+  if (t.dataset.del) { S.tracker = S.tracker.filter(x => x.id !== t.dataset.del); save(); renderTracker(); renderStart(); return; }
+  if (t.id === "tAdd") { const name = $("#tName").value.trim(); if (!name) { toast("Give the task a name"); $("#tName").focus(); return; }
+    addTracker(name, $("#tFreq").value, $("#tNow").value || 0, $("#tAi").value || 0, $("#tStatus").value); $("#tName").value = ""; toast("Added"); return; }
+  if (t.id === "tCopy") { const lines = S.tracker.map(x => `${x.name} | ${x.freq} | ${x.now} min now → ${x.ai} min with AI | ${x.status}`); copyText(`Automation ideas (${trackerHours().toFixed(1)} h/week reclaimable)\n` + lines.join("\n")); return; }
+  if (t.id === "tReset") { if (confirm("Clear all progress, tracker entries and notes saved in this browser?")) { S = Object.assign({}, DEFAULT, { days: {}, autos: {}, quiz: {}, assess: { answers: {}, result: null }, tracker: [], wins: [], notes: {} }); save(); renderAll(); toast("Cleared"); } return; }
+  if (t.id === "wAdd") { const v = $("#wText").value.trim(); if (!v) return; S.wins.push({ t: v, d: new Date().toLocaleDateString("en-IN", { day: "numeric", month: "short" }) }); save(); $("#wText").value = ""; renderTracker(); toast("Logged"); return; }
+  if (t.id === "themeBtn" || t.id === "themeBtnM") { toggleTheme(); return; }
+});
+document.addEventListener("change", e => {
+  const el = e.target;
+  if (el.dataset.st) { const t = S.tracker.find(x => x.id === el.dataset.st); if (t) { t.status = el.value; save(); renderTracker(); renderStart(); } }
+});
+document.addEventListener("input", e => {
+  const el = e.target;
+  if (el.dataset.note !== undefined) { S.notes[el.dataset.note] = el.value; save(); }
+});
+document.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.id === "wText") $("#wAdd").click(); if (e.key === "Enter" && e.target.id === "tName") $("#tAdd").click(); });
+
+/* ---------- boot ---------- */
+function renderAll() { renderNav(); renderAssess(); renderTools(); renderAutos(); renderDays(); renderPrompts(); renderTracker(); renderStart(); }
+applyTheme();
+renderAll();
+if (!location.hash) history.replaceState(null, "", "#start");
+route();
+</script>
+</body>
+</html>
